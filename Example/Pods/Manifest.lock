@@ -37,8 +37,8 @@ SPEC CHECKSUMS:
   UIAlertController+Blocks: 80e28b92523fb58aba4d1bccec013d5a0b0bddb2
   UIAlertView+Blocks: a46c99c5144f6c5dbc7d62fd2a0678daceec89a3
   YLT_BaseLib: dab85763619e476e0dcb19ec2fdc4fe44dad4c40
-  YLT_Pay: 1f413a8e461c9cac243adb9ae6b5ab55ce746eea
+  YLT_Pay: e9afb2b0fcbbff11f06c9009357ecf130271afb0
 
-PODFILE CHECKSUM: ee9f9edacbf1619cffa9f4522a85a4548908a752
+PODFILE CHECKSUM: 6541996db9e165db8471bd68dd87f74fc601a24e
 
 COCOAPODS: 1.4.0

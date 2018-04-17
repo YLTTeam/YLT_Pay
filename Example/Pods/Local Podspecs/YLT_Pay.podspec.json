@@ -39,8 +39,13 @@
   "frameworks": "CoreMotion",
   "libraries": [
     "z",
-    "sqlite3.0"
+    "sqlite3.0",
+    "c++"
   ],
+  "xcconfig": {
+    "CLANG_CXX_LANGUAGE_STANDARD": "c++11",
+    "CLANG_CXX_LIBRARY": "libc++"
+  },
   "vendored_frameworks": "YLT_Pay/Classes/Alipay/*.framework",
   "vendored_libraries": [
     "YLT_Pay/Classes/WeChatPay/*.a",

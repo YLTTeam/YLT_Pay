@@ -33,7 +33,12 @@ AliPay、WeChatPay、UnionPay、ApplePay等支付方式集成
   s.source_files = 'YLT_Pay/Classes/*.{h,m}','YLT_Pay/Classes/AliPay/*.{h,m}','YLT_Pay/Classes/AliPay/Util/*.{h,m}','YLT_Pay/Classes/WeChatPay/*.{h,m}','YLT_Pay/Classes/UnionPay/*.{h,m,mm}','YLT_Pay/Classes/ApplePay/*.{h,m}','YLT_Pay/Classes/IapPay/*.{h,m}'
   s.public_header_files = 'YLT_Pay/Classes/*.h','YLT_Pay/Classes/AliPay/*.h','PHPayLib/Classes/AliPay/Util/*.h','YLT_Pay/Classes/WeChatPay/*.h','YLT_Pay/Classes/UnionPay/*.h','YLT_Pay/Classes/ApplePay/*.h','YLT_Pay/Classes/IapPay/*.h'
   s.frameworks = 'CoreMotion'
-  s.libraries = 'z','sqlite3.0'
+  s.libraries = 'z','sqlite3.0','c++'
+  
+  s.xcconfig = {
+      'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
+      'CLANG_CXX_LIBRARY' => 'libc++'
+  }
   
   s.vendored_frameworks = 'YLT_Pay/Classes/Alipay/*.framework'
   s.vendored_libraries = 'YLT_Pay/Classes/WeChatPay/*.a','YLT_Pay/Classes/UnionPay/*.a'

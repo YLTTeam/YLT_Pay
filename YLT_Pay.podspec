@@ -30,32 +30,16 @@ AliPay、WeChatPay、UnionPay、ApplePay等支付方式集成
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'YLT_Pay/Classes/**/*.{h,m}'
-  s.public_header_files = 'YLT_Pay/Classes/**/*.h'
-  s.libraries = 'z'
+  s.source_files = 'YLT_Pay/Classes/*.{h,m}','YLT_Pay/Classes/AliPay/*.{h,m}','YLT_Pay/Classes/AliPay/Util/*.{h,m}','YLT_Pay/Classes/WeChatPay/*.{h,m}','YLT_Pay/Classes/UnionPay/*.{h,m,mm}'
+  s.public_header_files = 'YLT_Pay/Classes/*.h','YLT_Pay/Classes/AliPay/*.h','PHPayLib/Classes/AliPay/Util/*.h','YLT_Pay/Classes/WeChatPay/*.h','YLT_Pay/Classes/UnionPay/*.h'
+  s.frameworks = 'CoreMotion'
+  s.libraries = 'z','sqlite3.0'
+  
+  s.vendored_frameworks = 'YLT_Pay/Classes/Alipay/*.framework'
+  s.vendored_libraries = 'YLT_Pay/Classes/WeChatPay/*.a','YLT_Pay/Classes/UnionPay/*.a'
+  s.resources = 'YLT_Pay/Classes/Alipay/*.bundle'
   
   s.dependency 'YLT_BaseLib'
   #s.dependency 'OpenSSL-Universal'
-  
-  s.subspec 'AliPay' do |sp|
-      sp.source_files = 'YLT_Pay/Classes/AliPay/*.{h,m}','YLT_Pay/Classes/AliPay/Util/*.{h,m}'
-      sp.public_header_files = 'YLT_Pay/Classes/AliPay/*.h','PHPayLib/Classes/AliPay/Util/*.h'
-      sp.vendored_frameworks = 'YLT_Pay/Classes/Alipay/*.framework'
-      sp.resources = 'YLT_Pay/Classes/Alipay/*.bundle'
-  end
-  
-  s.subspec 'WeChatPay' do |sp|
-      sp.source_files = 'YLT_Pay/Classes/WeChatPay/*.{h,m}'
-      sp.public_header_files = 'YLT_Pay/Classes/WeChatPay/*.h'
-      sp.vendored_libraries = 'YLT_Pay/Classes/WeChatPay/*.a'
-      sp.libraries = 'sqlite3.0'
-  end
-  
-  s.subspec 'UnionPay' do |sp|
-      sp.source_files = 'YLT_Pay/Classes/UnionPay/*.{h,m,mm}'
-      sp.public_header_files = 'YLT_Pay/Classes/UnionPay/*.h'
-      sp.vendored_libraries = 'YLT_Pay/Classes/UnionPay/*.a'
-      sp.frameworks = 'CoreMotion'
-  end
   
 end

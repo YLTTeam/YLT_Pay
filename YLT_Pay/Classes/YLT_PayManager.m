@@ -108,7 +108,7 @@ YLT_ShareInstance(YLT_PayManager);
  */
 - (BOOL)ylt_handleOpenURL:(NSURL *)url
                   options:(NSDictionary *)options {
-    return [[self.channelInfo objectForKey:_payOrder.channel] ylt_handleOpenURL:url options:options];
+    return [[self.channelInfo objectForKey:self.payOrder.channel] ylt_handleOpenURL:url options:options];
 }
 
 @end

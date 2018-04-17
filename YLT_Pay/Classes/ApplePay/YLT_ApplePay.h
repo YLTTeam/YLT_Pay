@@ -6,7 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YLT_PayProtocol.h"
 
-@interface YLT_ApplePay : NSObject
+@interface YLT_ApplePay : NSObject<YLT_PayProtocol>
 
 @end

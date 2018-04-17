@@ -9,7 +9,7 @@
 #import <sys/sysctl.h>
 #import <CommonCrypto/CommonDigest.h>
 #import "YLT_PayOrder.h"
-#import <AlipaySDK.h>
+#import <AlipaySDK/AlipaySDK.h>
 
 @interface YLT_AliPay() {
 }

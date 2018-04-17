@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		011FE744B7F57C6507752875787A8F55 /* YLT_BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 106E33AFD6704BCE07A5C0A64E1BC89A /* YLT_BaseModel.m */; };
-		0351D1474936A6D764CC8B9F747ECA79 /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = C821268CE5571A47666689CD7CFAE1FF /* WXApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		068F6DF04EF0371EEC29C6787B63910B /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AAE5A1E60C2A4241AB4348D7F8E59A /* NSObject+MJProperty.m */; };
 		06B4918006FF543F47326773BFDFA4DC /* YLT_BaseLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F0574B55AD427FD622E704DB33DE77 /* YLT_BaseLib-dummy.m */; };
+		07E223ECC49E11C0E8D1EC40F813BBDE /* UPPaymentControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 51C8EA38BCD066DACF56E687C3E2FB98 /* UPPaymentControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08A645FEE705996BEC550BA6541756E0 /* NSDictionary+YLT_Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FD35042EA02D48579E12B5AE5712DBDF /* NSDictionary+YLT_Log.m */; };
-		08F015C3039B7321ED085901629B8E2B /* YLT_AliPay.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EE2741459C323285B7DB1B0A0F9066 /* YLT_AliPay.m */; };
+		08F015C3039B7321ED085901629B8E2B /* YLT_AliPay.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAB912A50EC5B18977F7CD6AFBEAE26 /* YLT_AliPay.m */; };
 		094E6ECE34F0CCB085FAA095D24708F4 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FBE71FCB105C54F2CD8E058B6613A1 /* MJPropertyType.m */; };
 		09D81E725413F5616AEB1C303D79C4AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ED5BC6E1C6764B181A455C64B887C5 /* Foundation.framework */; };
 		0A1D1BA5F4A6861F59960AE501A61367 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E7EAE56C88F8415421C566E3E7F746 /* MJPropertyKey.m */; };
@@ -25,37 +25,37 @@
 		15B2830E38EF56AA7FDAA2726DA510E7 /* UIAlertController+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 250CA4D5941C765830970BEE3A4A76C2 /* UIAlertController+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16B84FAB7077482E901EF6D10826E71D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ED5BC6E1C6764B181A455C64B887C5 /* Foundation.framework */; };
 		16C3AB2B2390E08B29674F9C480E9A9E /* FastCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A0906B0A1982549D1442D4CCBA3396EF /* FastCoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		18716AE977A336D5EA99C45C8C83BD4A /* YLT_Pay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B4435C813FA7F39DD16264250AC5EA /* YLT_Pay-dummy.m */; };
+		18716AE977A336D5EA99C45C8C83BD4A /* YLT_Pay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A8AB9A681916A12FA8143FF0A7CCA6 /* YLT_Pay-dummy.m */; };
 		19AE700A98ABAB5FE563DCACD4517D81 /* NSString+YLT_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73D2DF1174E2EC4F39805D085F32EF /* NSString+YLT_Extension.m */; };
-		1B9DD377222D6CEEDD05A105C813E46E /* YLT_PayOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2512FAB27F6A15CBEEAFE9434EF5D6 /* YLT_PayOrder.m */; };
+		1B9DD377222D6CEEDD05A105C813E46E /* YLT_PayOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D60AE08F76EF07882A33D295A981168 /* YLT_PayOrder.m */; };
 		1CA04B979028DB01D1268AA8BBBB5EB7 /* Pods-YLT_Pay_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B905006A4EC799AB7FE9DBCAC3EE931 /* Pods-YLT_Pay_Example-dummy.m */; };
 		1D8A3981ED936D803D341AFD863EC2C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ED5BC6E1C6764B181A455C64B887C5 /* Foundation.framework */; };
 		1F3AA5B9EBAAD134BF25B0B89FDF108B /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D651B7AE0739158E7E96C36CF3D05F /* NSString+MJExtension.m */; };
 		1FBFD94316326DCB9485F8704696806B /* MJExtensionConst.h in Headers */ = {isa = PBXBuildFile; fileRef = CF84F79B7966A5ECA0E6BDD99561796F /* MJExtensionConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22199E0D00B986EA3CF0C8E729C84660 /* AlipaySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E5F93F77C14D3D52A4870E0D17F8FBF1 /* AlipaySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22554065FA07F1BFE5308A685394CB12 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1EE655AF2F29D9B0E24BE47D7317E4 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24CAADAA17E7603B367FA09A248C25ED /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CEAA03F5367B80D8F71CE3D8AF0B593 /* FMDB.framework */; };
 		251E5D858A4AA1C92F79B6BB907DB9B4 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A89C268F2EAF3580290A91CFB17B97AB /* UIActionSheet+Blocks.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		26918BF6DC9C50BDDC7F2D2757AF3266 /* YLT_DownloaderHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F2332DDF22DD44FEB8FFCF8C6E44710 /* YLT_DownloaderHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A68D3847DB578F54A8CF1E27F5A74B5 /* YLT_IapPay.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC7169AFDEC01A89AE3086ECA154283 /* YLT_IapPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28DAE1F6A9BC1623D5BC31D286FAEF69 /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0426DCD8002BE6B92D01F4671074CA33 /* WXApiObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29BB7B0F755ADBE7CEC59E84B0D938ED /* YLT_PayError.h in Headers */ = {isa = PBXBuildFile; fileRef = DA1C1466F5A4D5990220653E54CC9A56 /* YLT_PayError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E04F7FD19DB0B64EA10207786F864EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ED5BC6E1C6764B181A455C64B887C5 /* Foundation.framework */; };
-		32EF4BDB0CC581F8297BA3896007A9A8 /* YLT_UnionPay.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F21E905C5B0EF2A03053E02742D6B5D /* YLT_UnionPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3445A6D95A9EE719CC54A4C046D81915 /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A1ADA91F279FFEDAB36F3291960358 /* WXApiObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32F73436581F820E09022BEB064BBBF3 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 732746796DD10FC51CCF5C3038F95674 /* AlipaySDK.bundle */; };
 		3636D330779C7717D051875D727C5882 /* UIActionSheet+Blocks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A989FDBF92FA1C943A5B088BCA89EE8A /* UIActionSheet+Blocks-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		368667440AB65E3AADE3487E8F535D41 /* YLT_ModularManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0DB2EE87BFA2DC154466BC474A5135 /* YLT_ModularManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36A37CBBDBE1EAF9BD55EB752C2B8564 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B0FC110599EF7A09BE3BE0521A367781 /* AlipaySDK.bundle */; };
 		37F097E2269EF1BD238AD7449D796445 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E94AD71F611E1F3C9FF4A776DEA6EA /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		383448308BB9C5CB67073E0A8DED4A43 /* NSObject+MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = B7FE4D135BDCB4F9C5A43E1E5F210A22 /* NSObject+MJProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		389119C7B2FC5C6F285F393E96D830CE /* YLT_UnionPay.h in Headers */ = {isa = PBXBuildFile; fileRef = FDA9968F1567F65195976B69A6D9FECA /* YLT_UnionPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		397A406E0907566361A5D3748AB364AC /* YLT_KeyChainHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = FE9377028700F5F9CE3EF89EBD1043E8 /* YLT_KeyChainHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A3592D929B67BDEA9FE3200EA0AC92F /* UIAlertController+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = BC759143DF35D8ECEC96A40D6B874CB7 /* UIAlertController+Blocks.m */; };
 		3B54A9C2F6A0F0E3268464E20DA47F43 /* NSFileManager+YLT_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD53C345C5E1C6D90D4012A778E89BF /* NSFileManager+YLT_Extension.m */; };
 		3E0312037A0EC43EE26605780825B203 /* YLT_DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 025A15C4FA969CC56A8806B6E6E268A7 /* YLT_DBHelper.m */; };
 		3E43906B70EB01C06F3AE17008B853B9 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A57B181F6A70BC9E88F683578C50DEF /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E5858A0DD825F5D6936A589D35B472E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ED5BC6E1C6764B181A455C64B887C5 /* Foundation.framework */; };
+		40B5BF71AE4AE20B7FBE26E5AF098B8C /* YLT_WeChatPay.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB1367962F55D2BFB461FD1EBB2DA7A /* YLT_WeChatPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41A4ED61641CB4751A35F14AACFDEEB3 /* YLT_DBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 78F11F6405A79D5B3076266F9BFD89C2 /* YLT_DBHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41A6BF119C6A8DA64E3B0B7EEE4562A0 /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 5931EF47546DB5E3B394383609CA9B27 /* WXApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		420FC6A2A846BDE61E5EC1BD0A687031 /* YLT_PayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E65BCDB380728D7FB615A68B7893CCAB /* YLT_PayManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44FC4D5978782CFCDEF0DBFEBADFEDAB /* YLT_BaseModular.h in Headers */ = {isa = PBXBuildFile; fileRef = 492B41C21913ED040EBF7CA3CBF35910 /* YLT_BaseModular.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4879EEDD8616320E3E9AE29323F822C5 /* YLT_PayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C0FBF41A960EBA17385FAB19772461 /* YLT_PayManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50A541EADCA484370ADA9DE17D0DB85E /* YLT_PayOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = 06DAF103DCE0567BCF00DC46290714DC /* YLT_PayOrder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52D551D5791F81F4690CF337C2AF3D43 /* UIAlertController_Blocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8F89A3D63BA8E29D38EDE46091A7F9 /* UIAlertController_Blocks.framework */; };
 		52F3F8EA1BCCC06BED73F71A69FE09D8 /* RMUniversalAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DF65DAFEA47BD8BC143E0865F10888 /* RMUniversalAlert.framework */; };
 		555BE3F2807ABE568DA64EDF42E36B4D /* Pods-YLT_Pay_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B3FA72DB45CFEF1E8F868568D0EE7A0 /* Pods-YLT_Pay_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,30 +65,29 @@
 		59A28C2CEFC4537C9DAF55D01C4ACED1 /* MJExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF899DF71DB844782D9AD0BD89E3E1C4 /* MJExtension-dummy.m */; };
 		5BD2A9D0D752792C18F1E7F6CDBEB0FA /* NSString+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 78F120BD3D3CC49FC30A551C2C94CBAD /* NSString+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E89ED15FDB4CE7F92544DDF4589C242 /* MJPropertyType.h in Headers */ = {isa = PBXBuildFile; fileRef = 2161A025665E1CE0F7D8F41159F2458A /* MJPropertyType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60139F322AA9C4D63D34C8B51CAA50FC /* YLT_PayProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D6293A00205BEED7F083E95CB3A275 /* YLT_PayProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61613DDB2CEFDD7E160F17F4B26A08D3 /* YLT_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 446B879FE0CB1AB7EFD9A5314ACF52BA /* YLT_Tools.m */; };
 		620A3501D8BA4A2F79F3E94825E30F07 /* YLT_BaseMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = B9F7BB4FFB5C44B8C079D86B754693F1 /* YLT_BaseMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64298620A2F1EFAB12386F3861E08D40 /* NSObject+MJCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D32DE0ABF51180CAACD6005662AE77 /* NSObject+MJCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64F9DBFF6F0FAD995CC93DADC56F0FB0 /* RMUniversalAlert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 783B4F3F36040580E42A5C491A4F5BA1 /* RMUniversalAlert-dummy.m */; };
 		66CB1A5EA54AC5E1A04BBB119B2EA068 /* MJExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167265813139AC4E3371BF80BD00F17C /* MJExtension.framework */; };
-		6941D8EAA30BD05F9BC784771EA8365D /* YLT_Pay.h in Headers */ = {isa = PBXBuildFile; fileRef = 25779AC1653F56518A14CB0BC8D1C4CE /* YLT_Pay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DA14D61DB56E00FF18F2F75C51454AE /* MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B9951BC3170267308B8C5F0A7B676F /* MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E06AA755B5407E46A15D06281957982 /* YLT_Pay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C72098F0C2FA73B22BE60A26F8C4189 /* YLT_Pay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E16ABFC550A2BCA8EC69F9E13A76F68 /* FastCoding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73B67D6BB0211A8BD460DC6A05190AD6 /* FastCoding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6EBB6B2EA2B729DD928F441FBFCDBAF4 /* YLT_WeChatPay.m in Sources */ = {isa = PBXBuildFile; fileRef = BE54E74DE899AF8DC75EAD6EA8082A4A /* YLT_WeChatPay.m */; };
+		6EBB6B2EA2B729DD928F441FBFCDBAF4 /* YLT_WeChatPay.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCD79087791FE170E5231E8C5B34FDA /* YLT_WeChatPay.m */; };
 		6EEEDA1BE03D30A4E8D711E3CA16A476 /* UIAlertView+Blocks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 111170799D43ED358F8E1EC040B65054 /* UIAlertView+Blocks-dummy.m */; };
-		701D89D295854D34492728FEF11A363C /* YLT_AliPay.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D59164AE7A5A55DA94A55BC1E478DD /* YLT_AliPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72563ADE99DC9E753B27D48B16AA3654 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ED5BC6E1C6764B181A455C64B887C5 /* Foundation.framework */; };
-		7388E958A26AE57A60932F0D6F2C402C /* APayAuthInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 673F5662FD4E8BBCE297B843BDBD994B /* APayAuthInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7410B2A65C0651D85D3B173865D3026B /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D833D0442E09D6A861BC74885BD77325 /* NSObject+MJClass.m */; };
 		759C142C3F973ADFEA7D4F544684F5B0 /* NSArray+YLT_Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EED38BE3E10E452F97B49C1AB659F5 /* NSArray+YLT_Log.m */; };
 		78507CC13B73BC0BE6628A63E2B1439D /* NSTimer+YLT_Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E278625CAC5C6FA4926A3DA014395A5 /* NSTimer+YLT_Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7894B87B76E6EEA8EDC8D4A664669B6F /* YLT_PayError.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BA430C970531DC6F256040D1E540C6 /* YLT_PayError.m */; };
+		7894B87B76E6EEA8EDC8D4A664669B6F /* YLT_PayError.m in Sources */ = {isa = PBXBuildFile; fileRef = A475EFF2E7AB5CEDB967AA9AA177DD5F /* YLT_PayError.m */; };
+		78A62ABEC255AB4E440F18EE292BD40E /* WechatAuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = B417FB221193C375D20A09E5095D2DCB /* WechatAuthSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7DE97C68CB0FAE0DAF123E890D7AF3E4 /* NSTimer+YLT_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FB50C1A76FF7EAD45239A2116650D6 /* NSTimer+YLT_Extension.m */; };
 		807937CEE7A267CE55317712BFBB7E29 /* YLT_BaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CD523011EE36AB3CA575F7D729AD7DEB /* YLT_BaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81D14D051A5ADEAF8D17CCAA5244C261 /* RMPopoverPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F86EF9B391CC48F9AFFDA6BE52258E /* RMPopoverPresentationController.m */; };
 		8256581E7A1D99C442F0FA55371CE814 /* FastCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 64781DC5BFF843781EA5DFA652B06277 /* FastCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83A98127E04FA648C245FB13CE129F8C /* YLT_PhotoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AA7DA6E874C9A7702A382923EEDCA9 /* YLT_PhotoHelper.m */; };
 		83C22E5CC554C97C62AF8393501986E4 /* YLT_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = D2CCF04080027B26AD75865AC9B1A43C /* YLT_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86D9BB9AE569A7C11F5710843F1605AC /* YLT_IapPay.h in Headers */ = {isa = PBXBuildFile; fileRef = 9898E72CC78BD8F5DB519D142575153E /* YLT_IapPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87ECA447DB887426665260651B7F147E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7847D8732EDE26177E5762C748404193 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		8B9A61986DD7441C8AD1CEC278CEE33E /* NSObject+YLT_Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8DC4773B4641D50508D52AD40A2A12 /* NSObject+YLT_Safe.m */; };
 		8EC1C8F8C76EDF5D019E8EBA01C2ABB3 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D4834601423F9623E02599DAD9C171 /* NSObject+MJCoding.m */; };
@@ -96,11 +95,11 @@
 		911F24AA6C09027B2AA788F08EAF57F9 /* FastCoding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D02D502C0827299498D85325EACD2AAB /* FastCoding-dummy.m */; };
 		918C4564CBF1CAD403CFB27191DE25E3 /* YLT_AuthorizationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDE8ADFFE86FD2C96A09E3B9DC4F4F1 /* YLT_AuthorizationHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92FE1520CDD143005F15C24A06AA1831 /* NSDate+YLT_Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D511C5CF6E4FAEA880E48CF4B51D655 /* NSDate+YLT_Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96659B39183F989EE0224A37D7D97C39 /* WechatAuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EEB330895ADCD43C7A0B3EACE22480 /* WechatAuthSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96E70B43FC04BC99AED1BBD4FB1D7581 /* FMDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F6F7086EEE8F90AC8A4887CA1C741E /* FMDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97909145A5BE3A349574625572857004 /* UIActionSheet+Blocks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C81916F5C4799B275E80912A874E3C29 /* UIActionSheet+Blocks-dummy.m */; };
-		990D1ECAE8B9D647231B4B3CDD8742EA /* YLT_PayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7390DB2313F12262105BD20F8891E7AE /* YLT_PayManager.m */; };
+		990D1ECAE8B9D647231B4B3CDD8742EA /* YLT_PayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DBD643CFD2060814ED076B6735E2B4B /* YLT_PayManager.m */; };
 		9945F50BC7D60FB3F98E96AB0725AC8E /* YLT_AuthorizationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5C8FF82EEED4D0ADAF8833AEEEC874 /* YLT_AuthorizationHelper.m */; };
+		995C3903132F4C9F7A5928C00749FA5D /* YLT_Pay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4E15CB242DD17C56EC53D46DB5972D /* YLT_Pay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B7CCCBFAC2AA55289F8AE5DBC403EED /* UIDevice+YLT_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D93E2E23AFD942E3DED18360F62075AD /* UIDevice+YLT_Extension.m */; };
 		9B8D84996694C541CD3434386E0A081A /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = B9F5CEBF7605439583FE29EB1C627A9F /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C11A290C9C5866A185A54F1EC04E2BB /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E71050E64017274F11A763403AFC0 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -114,7 +113,6 @@
 		A59FC8AA07020259386A24AF9F866784 /* UIDevice+YLT_Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 988552CF6F64872AEEB4848330AE45E3 /* UIDevice+YLT_Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A61CBA1B7EC469C602F47186539239E0 /* MJPropertyKey.h in Headers */ = {isa = PBXBuildFile; fileRef = C4DC949F86FA34BD68050706AE11AE4E /* MJPropertyKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A85D8C74BBC94E4A0F21B869861A1F67 /* UIAlertView+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 95C3A0D1EB64401377FBCD79CA7CCC29 /* UIAlertView+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC9F51BC592E81649D4360D687C74879 /* UPPaymentControl.h in Headers */ = {isa = PBXBuildFile; fileRef = D1AAF5BB18C4B49941AAD92FB5F512E4 /* UPPaymentControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD165909673B5669AE472B8C9D5E1930 /* NSDictionary+YLT_Log.h in Headers */ = {isa = PBXBuildFile; fileRef = D0446878E41DE028ACF8E0446680B59C /* NSDictionary+YLT_Log.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0103358B76F630AAF9E5CF515DFFD13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ED5BC6E1C6764B181A455C64B887C5 /* Foundation.framework */; };
 		B193424FD59B81D7CAC1A8753EC4EFE3 /* Pods-YLT_Pay_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C240851DA9A8F8C85AE780CD1E9A1AF /* Pods-YLT_Pay_Tests-dummy.m */; };
@@ -127,11 +125,9 @@
 		BA71B58A2E44BD150AE3F1A11F65142E /* MJExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167265813139AC4E3371BF80BD00F17C /* MJExtension.framework */; };
 		BD603242DFD45A72B29BB2F95EC118A8 /* NSObject+YLT_Safe.h in Headers */ = {isa = PBXBuildFile; fileRef = C3C56CB6E75C1729FF8E0C8B3ECE64B3 /* NSObject+YLT_Safe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF99DC99A710A04F78A69ADC3D75609D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ED5BC6E1C6764B181A455C64B887C5 /* Foundation.framework */; };
-		C21D9FD647593E89A72A021F1DDD0440 /* YLT_ApplePay.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A379D834F41BD566C0FAE40133AF18C /* YLT_ApplePay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C53BD63A4D4C09C5FCF8E5ABAD02B017 /* RMPopoverPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 97547438200891866672F9CBF34C80D9 /* RMPopoverPresentationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C605A44DF96E7FCACF7D6E37B62F795D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734720EE4AB7CAE25F6C08026E59E24 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		C7C6B34278BFC7CFDAEBDF42EBA3BEDA /* NSString+YLT_Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = E1659DCB4AAA57FFEF3501C714792601 /* NSString+YLT_Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB148C4AB5D52188E4AF18825D61BEFE /* YLT_PayProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F639D54447DE60BFBFDCBC634B14F9F3 /* YLT_PayProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CCB74062CE0F4B8E5B7483599BC398DA /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B79C8663ECC20230EF786CADCA946B5 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD4D283A61707C386754BBD31F5BEABB /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = D31165B8A9A36F3290EDD79B29878E3A /* MJExtensionConst.m */; };
 		CD7CAAA5F4B01EBEE6DAAB2C4ED7442F /* NSObject+YLT_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9D1323FFC1CA959933C819EAA4457 /* NSObject+YLT_Extension.m */; };
@@ -139,27 +135,29 @@
 		D5991941DC41DDDDDACAE0B5D47A4639 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9D2EF7D089C533B7156C49D94FBE2C /* FMDB-dummy.m */; };
 		D7AC629EB512FEE76468B62312477235 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CEAA03F5367B80D8F71CE3D8AF0B593 /* FMDB.framework */; };
 		D7B751D05B45EA426A8F6E5B9147433A /* YLT_BaseLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A506C68BD251D480445569AF637B0F1F /* YLT_BaseLib.framework */; };
+		DA4D9BAC74B5A802A9D93150B98CDCC7 /* YLT_Pay.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FCC67AE69BFF5C4AC409ACBCE4E287 /* YLT_Pay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB4B73BA88D689FCDDADD4F3C4C9CB26 /* UIAlertController+Blocks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4673E109D8BFC1CE355AB94A97439B /* UIAlertController+Blocks-dummy.m */; };
 		DDEB03A90E7574532BED0DB2963364E3 /* NSDate+YLT_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A3190A686A3C3A81D256B78F2C6A5988 /* NSDate+YLT_Extension.m */; };
 		DEB25911B8EA7BCD97A216621ED0C567 /* UIAlertView_Blocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB266E08567A22B1D4E1E8241B75AEC6 /* UIAlertView_Blocks.framework */; };
 		DF6E77B073205366B02C11A6027E25F5 /* YLT_FileHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = DF42BA733777AE5713FE9E313B275958 /* YLT_FileHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5A2DACF8D4503EA7C40BFC08AC13216 /* YLT_WeChatPay.h in Headers */ = {isa = PBXBuildFile; fileRef = 868F0517C00EFB0B899F7F174FBD9F74 /* YLT_WeChatPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4F8867752F1E218DF6877FE07EFB37C /* YLT_ApplePay.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E5BC8E6C8474C11F89F717928628A6E /* YLT_ApplePay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5FCA2ABBE2C5EF75F004103BC26D472 /* MJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = BDA18DC35BAA6E4EAF663B115D01C328 /* MJFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E697D14E581CAEE081A1F6B467A014B7 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BBDC9F77F6C0051DD0937B856DE1F7 /* MJProperty.m */; };
-		E6A549C68ED95F5A9563DC06B6CC5649 /* YLT_PayError.h in Headers */ = {isa = PBXBuildFile; fileRef = 1759ADEDCF6CF734138DDE1373BA1B4F /* YLT_PayError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E86ED7F9453E9A8037CBE1D8D8127458 /* YLT_DownloaderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B23935879381B85207CAB7C20E8FF3 /* YLT_DownloaderHelper.m */; };
 		E9FE29C20033922790BEBFC06E7BC9FB /* RMUniversalAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DF65DAFEA47BD8BC143E0865F10888 /* RMUniversalAlert.framework */; };
 		EC7456CD52EE3DB8000C673D632C43BB /* YLT_BaseLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE2A4D6BE71855242A3B1DC755A3CC5F /* YLT_BaseLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED0CA30607612781537B0AF69F4AD877 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ED5BC6E1C6764B181A455C64B887C5 /* Foundation.framework */; };
-		F02CAB025C6E92B118855652B61BB6C5 /* YLT_IapPay.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8769AF7291A486E68C2F8F82F9DC51 /* YLT_IapPay.m */; };
+		F02CAB025C6E92B118855652B61BB6C5 /* YLT_IapPay.m in Sources */ = {isa = PBXBuildFile; fileRef = C85A34E12571F54141902F322F29C8DC /* YLT_IapPay.m */; };
 		F11FAB91014130EE233A3429439D38D7 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 429B5999632ED37D6F06DDDB208B5A38 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3FED8E03FC64169F33798E8FD41A5D6 /* UIAlertController+Blocks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D729A88AF33D45BE5DAE567BB695A244 /* UIAlertController+Blocks-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F53BE19B2CB360AC554A04B27DED8519 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 062757620EC55DBEB39539EA959F9B8A /* MJFoundation.m */; };
 		F5FF8C23A6CC937D88055C847875A40E /* RMUniversalAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8DE8BCAC27E327600BB6EE6DFF54D0 /* RMUniversalAlert.m */; };
-		F6DEE8EFEBA2E1AED25A8E2A328903B3 /* YLT_ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = CCECFE6595038667CDF7DC944913499E /* YLT_ApplePay.m */; };
-		F741CFF51CEA0839F8F6577ECCC8C28E /* YLT_UnionPay.mm in Sources */ = {isa = PBXBuildFile; fileRef = 70442AD8FFAF6534E0124D82622CE7E9 /* YLT_UnionPay.mm */; };
+		F6DEE8EFEBA2E1AED25A8E2A328903B3 /* YLT_ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0C6EA330BF3D13B01C9571B9BD3D4 /* YLT_ApplePay.m */; };
+		F741CFF51CEA0839F8F6577ECCC8C28E /* YLT_UnionPay.mm in Sources */ = {isa = PBXBuildFile; fileRef = C87AD288AEB12CB699BCC42D01098BEF /* YLT_UnionPay.mm */; };
 		F75E2AE2D12480AE889D1D3B7A654FAA /* MJExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB8B37A3098D40B9E887E37EF6AFA127 /* MJExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7A4D0E43D2023994A5987B97E18D1A5 /* RMUniversalAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 590319F7E8E9290D4D27FCD3DB8A1056 /* RMUniversalAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB5760542D78BD01B657C8D0653ABBA5 /* YLT_PayOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = C970BAA7A0E6146794D345BB22D623DF /* YLT_PayOrder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB75973751E09E9211321781C7BC774D /* YLT_AliPay.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E83E3F2F8E63D4A08A5C6671D0B4B8F /* YLT_AliPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDB5A39D897077BD57E5CAED2FDBFB89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ED5BC6E1C6764B181A455C64B887C5 /* Foundation.framework */; };
 		FFFEDA7263439D2F7374B88921C1934E /* YLT_KeyChainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B81490B6FB4C967193F83138787DFC /* YLT_KeyChainHelper.m */; };
 /* End PBXBuildFile section */
@@ -316,11 +314,12 @@
 
 /* Begin PBXFileReference section */
 		025A15C4FA969CC56A8806B6E6E268A7 /* YLT_DBHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLT_DBHelper.m; path = YLT_BaseLib/Classes/Helper/YLT_DBHelper.m; sourceTree = "<group>"; };
-		0374330DA3EE86593F7159FC6C0CB555 /* YLT_Pay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLT_Pay-prefix.pch"; sourceTree = "<group>"; };
 		03BA8B39980E59E175A0ABC98C828EFD /* Pods-YLT_Pay_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YLT_Pay_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		0426DCD8002BE6B92D01F4671074CA33 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		05D6293A00205BEED7F083E95CB3A275 /* YLT_PayProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_PayProtocol.h; path = YLT_Pay/Classes/YLT_PayProtocol.h; sourceTree = "<group>"; };
 		062757620EC55DBEB39539EA959F9B8A /* MJFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJFoundation.m; path = MJExtension/MJFoundation.m; sourceTree = "<group>"; };
+		06310ED6185DEE7B3277F78C06AC8D5D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		06B23935879381B85207CAB7C20E8FF3 /* YLT_DownloaderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLT_DownloaderHelper.m; path = YLT_BaseLib/Classes/Helper/YLT_DownloaderHelper.m; sourceTree = "<group>"; };
-		06DAF103DCE0567BCF00DC46290714DC /* YLT_PayOrder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_PayOrder.h; path = YLT_Pay/Classes/YLT_PayOrder.h; sourceTree = "<group>"; };
 		090D1B6A35193FEF3B2718547C0C7285 /* UIAlertController_Blocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIAlertController_Blocks.framework; path = "UIAlertController+Blocks.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0989B420E898DDC57781DEA5B971310E /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMDB.framework; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D0DB2EE87BFA2DC154466BC474A5135 /* YLT_ModularManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_ModularManager.h; path = YLT_BaseLib/Classes/Manager/YLT_ModularManager.h; sourceTree = "<group>"; };
@@ -330,12 +329,8 @@
 		112619A1BF6E77555F9BCA755EAAA815 /* UIActionSheet+Blocks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "UIActionSheet+Blocks.modulemap"; sourceTree = "<group>"; };
 		12D6A3AB09689BF79AF601E4F9712BAA /* Pods-YLT_Pay_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YLT_Pay_Example-resources.sh"; sourceTree = "<group>"; };
 		13B63A8ED55F0431B825553AB702615A /* FastCoding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FastCoding.modulemap; sourceTree = "<group>"; };
-		144B1E13570FC6E7998A345C1D0848F5 /* YLT_Pay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YLT_Pay.modulemap; sourceTree = "<group>"; };
-		15B19CEC6C0B2F13EDB6CC2D6B9B20B7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		167265813139AC4E3371BF80BD00F17C /* MJExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1759ADEDCF6CF734138DDE1373BA1B4F /* YLT_PayError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_PayError.h; path = YLT_Pay/Classes/YLT_PayError.h; sourceTree = "<group>"; };
 		17F0574B55AD427FD622E704DB33DE77 /* YLT_BaseLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLT_BaseLib-dummy.m"; sourceTree = "<group>"; };
-		19DAAADF42E23543CE8E0E5C5DD958BF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19E187CC3D9AC75207F4687C39BA5147 /* UIAlertView_Blocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIAlertView_Blocks.framework; path = "UIAlertView+Blocks.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A10B3C9EBBDF97E18C4A0103EB9C362 /* YLT_BaseLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLT_BaseLib-prefix.pch"; sourceTree = "<group>"; };
 		1B1EE655AF2F29D9B0E24BE47D7317E4 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
@@ -346,68 +341,65 @@
 		1FFDB5D2F6541948B8FF601D7FEFDBB3 /* FastCoding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FastCoding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20FDDBAB191DE4F434E91EFE83F3552C /* MJExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MJExtension.modulemap; sourceTree = "<group>"; };
 		2161A025665E1CE0F7D8F41159F2458A /* MJPropertyType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJPropertyType.h; path = MJExtension/MJPropertyType.h; sourceTree = "<group>"; };
-		21FEBF72669641733BB780866CA297B6 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		222F0901CC5A234C4301A0DCF624780C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22C7B2FA00BCF234E2824DA7B5369A96 /* YLT_BaseLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YLT_BaseLib.modulemap; sourceTree = "<group>"; };
 		24DF65DAFEA47BD8BC143E0865F10888 /* RMUniversalAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RMUniversalAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		250CA4D5941C765830970BEE3A4A76C2 /* UIAlertController+Blocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Blocks.h"; sourceTree = "<group>"; };
-		25779AC1653F56518A14CB0BC8D1C4CE /* YLT_Pay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_Pay.h; path = YLT_Pay/Classes/YLT_Pay.h; sourceTree = "<group>"; };
 		25F86EF9B391CC48F9AFFDA6BE52258E /* RMPopoverPresentationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RMPopoverPresentationController.m; sourceTree = "<group>"; };
 		26D651B7AE0739158E7E96C36CF3D05F /* NSString+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MJExtension.m"; path = "MJExtension/NSString+MJExtension.m"; sourceTree = "<group>"; };
 		274864C1D6C4D1F1A374B84AF5DFAC15 /* RMUniversalAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RMUniversalAlert.modulemap; sourceTree = "<group>"; };
 		2A57B181F6A70BC9E88F683578C50DEF /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
-		2B2512FAB27F6A15CBEEAFE9434EF5D6 /* YLT_PayOrder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLT_PayOrder.m; path = YLT_Pay/Classes/YLT_PayOrder.m; sourceTree = "<group>"; };
 		2C240851DA9A8F8C85AE780CD1E9A1AF /* Pods-YLT_Pay_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YLT_Pay_Tests-dummy.m"; sourceTree = "<group>"; };
 		2F020E41515D779BE588619235CA971E /* RMUniversalAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RMUniversalAlert.framework; path = RMUniversalAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F21E905C5B0EF2A03053E02742D6B5D /* YLT_UnionPay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YLT_UnionPay.h; sourceTree = "<group>"; };
 		31593BB2750F1E789B72537090440DCD /* UIAlertController+Blocks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "UIAlertController+Blocks.modulemap"; sourceTree = "<group>"; };
 		324E71050E64017274F11A763403AFC0 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
 		334908CFEBFBBBD4BC5B7E7BB3068A5E /* Pods_YLT_Pay_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YLT_Pay_Example.framework; path = "Pods-YLT_Pay_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35F6F7086EEE8F90AC8A4887CA1C741E /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
 		373F4B75D72D80976EF4D4D07F33B341 /* Pods_YLT_Pay_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YLT_Pay_Tests.framework; path = "Pods-YLT_Pay_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C9A0958350BFD061D4CD80451595BF /* MJExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJExtension.framework; path = MJExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A35D601DEAB5EBB1ABC1D4D789A3BB1 /* libPaymentControl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libPaymentControl.a; path = YLT_Pay/Classes/UnionPay/libPaymentControl.a; sourceTree = "<group>"; };
 		3A687326E6B794B6AE9AAF872EE096EE /* YLT_BaseLib.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLT_BaseLib.xcconfig; sourceTree = "<group>"; };
-		3B3E43FB147FCA5E850B4D4D31D1C5A1 /* libPaymentControl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
 		3B905006A4EC799AB7FE9DBCAC3EE931 /* Pods-YLT_Pay_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YLT_Pay_Example-dummy.m"; sourceTree = "<group>"; };
 		3BFD1808FE2C4F59040D68F6723DBFAA /* YLT_ModularManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLT_ModularManager.m; path = YLT_BaseLib/Classes/Manager/YLT_ModularManager.m; sourceTree = "<group>"; };
 		3CAC11284206A696D4ACE9D6CF650D15 /* Pods-YLT_Pay_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YLT_Pay_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3D3F87E53EA0BD7CB138C41011B4B256 /* YLT_Pay.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = YLT_Pay.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		3EE520D3C64F06432A1505EAE95AC983 /* YLT_Pay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLT_Pay.xcconfig; sourceTree = "<group>"; };
+		3D60AE08F76EF07882A33D295A981168 /* YLT_PayOrder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLT_PayOrder.m; path = YLT_Pay/Classes/YLT_PayOrder.m; sourceTree = "<group>"; };
 		3F2332DDF22DD44FEB8FFCF8C6E44710 /* YLT_DownloaderHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_DownloaderHelper.h; path = YLT_BaseLib/Classes/Helper/YLT_DownloaderHelper.h; sourceTree = "<group>"; };
 		4263EEBD4B2639BB304232E979DA980C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		429B5999632ED37D6F06DDDB208B5A38 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		42FCC67AE69BFF5C4AC409ACBCE4E287 /* YLT_Pay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_Pay.h; path = YLT_Pay/Classes/YLT_Pay.h; sourceTree = "<group>"; };
 		446B879FE0CB1AB7EFD9A5314ACF52BA /* YLT_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLT_Tools.m; path = YLT_BaseLib/Classes/Tools/YLT_Tools.m; sourceTree = "<group>"; };
 		45B81490B6FB4C967193F83138787DFC /* YLT_KeyChainHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLT_KeyChainHelper.m; path = YLT_BaseLib/Classes/Helper/YLT_KeyChainHelper.m; sourceTree = "<group>"; };
-		46EEB330895ADCD43C7A0B3EACE22480 /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		46F7683F66470EFEC2A38EF16B31D088 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJKeyValue.h"; path = "MJExtension/NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
 		492B41C21913ED040EBF7CA3CBF35910 /* YLT_BaseModular.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_BaseModular.h; path = YLT_BaseLib/Classes/Base/YLT_BaseModular.h; sourceTree = "<group>"; };
 		4D511C5CF6E4FAEA880E48CF4B51D655 /* NSDate+YLT_Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+YLT_Extension.h"; path = "YLT_BaseLib/Classes/Category/NSDate+YLT_Extension.h"; sourceTree = "<group>"; };
 		4D728567E3A334AEBC25699E6BA1F5DE /* MJExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJExtension.xcconfig; sourceTree = "<group>"; };
+		4DBD643CFD2060814ED076B6735E2B4B /* YLT_PayManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLT_PayManager.m; path = YLT_Pay/Classes/YLT_PayManager.m; sourceTree = "<group>"; };
 		4E278625CAC5C6FA4926A3DA014395A5 /* NSTimer+YLT_Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+YLT_Extension.h"; path = "YLT_BaseLib/Classes/Category/NSTimer+YLT_Extension.h"; sourceTree = "<group>"; };
-		54A1ADA91F279FFEDAB36F3291960358 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
-		56D59164AE7A5A55DA94A55BC1E478DD /* YLT_AliPay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YLT_AliPay.h; sourceTree = "<group>"; };
+		51C8EA38BCD066DACF56E687C3E2FB98 /* UPPaymentControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
 		578F58724781E53E7B137899E693E88E /* Pods-YLT_Pay_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YLT_Pay_Tests-umbrella.h"; sourceTree = "<group>"; };
 		590319F7E8E9290D4D27FCD3DB8A1056 /* RMUniversalAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RMUniversalAlert.h; sourceTree = "<group>"; };
+		5931EF47546DB5E3B394383609CA9B27 /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		59B59F1103A945BF33EC3C746BE6DDA8 /* YLT_Pay.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = YLT_Pay.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5B3FA72DB45CFEF1E8F868568D0EE7A0 /* Pods-YLT_Pay_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YLT_Pay_Example-umbrella.h"; sourceTree = "<group>"; };
 		5B79C8663ECC20230EF786CADCA946B5 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
 		5BD0CD25F1A72708EFA7A7A209175CB4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DB1367962F55D2BFB461FD1EBB2DA7A /* YLT_WeChatPay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YLT_WeChatPay.h; sourceTree = "<group>"; };
+		5E5BC8E6C8474C11F89F717928628A6E /* YLT_ApplePay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YLT_ApplePay.h; sourceTree = "<group>"; };
+		5FF6A678C3E056C54B7E98F8C9DB6F61 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		62036EB7F0829204A5C08593BA7061C4 /* Pods-YLT_Pay_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YLT_Pay_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		62C0FBF41A960EBA17385FAB19772461 /* YLT_PayManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_PayManager.h; path = YLT_Pay/Classes/YLT_PayManager.h; sourceTree = "<group>"; };
 		6305AFC7C936E240090F384AF72065DA /* UIAlertController+Blocks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIAlertController+Blocks.xcconfig"; sourceTree = "<group>"; };
 		6324A7043619D340A21ECACD7B22B789 /* Pods-YLT_Pay_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YLT_Pay_Example.release.xcconfig"; sourceTree = "<group>"; };
 		64781DC5BFF843781EA5DFA652B06277 /* FastCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FastCoder.h; path = FastCoder/FastCoder.h; sourceTree = "<group>"; };
 		64807C7894FCE416065547B0A53DCEB2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65FEC268FFFF8340C0294B1FB46EEB4D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		673F5662FD4E8BBCE297B843BDBD994B /* APayAuthInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = APayAuthInfo.h; sourceTree = "<group>"; };
 		69BC479F4930395A6F398368AF79F849 /* Pods-YLT_Pay_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YLT_Pay_Example-frameworks.sh"; sourceTree = "<group>"; };
-		6A379D834F41BD566C0FAE40133AF18C /* YLT_ApplePay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YLT_ApplePay.h; sourceTree = "<group>"; };
-		6A38A21EC646DA4118E1457F935C4435 /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		6B73D2DF1174E2EC4F39805D085F32EF /* NSString+YLT_Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+YLT_Extension.m"; path = "YLT_BaseLib/Classes/Category/NSString+YLT_Extension.m"; sourceTree = "<group>"; };
+		6CD6E24429880B720BB8F35D83723DBC /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = YLT_Pay/Classes/WeChatPay/libWeChatSDK.a; sourceTree = "<group>"; };
 		6CEAA03F5367B80D8F71CE3D8AF0B593 /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5C8FF82EEED4D0ADAF8833AEEEC874 /* YLT_AuthorizationHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLT_AuthorizationHelper.m; path = YLT_BaseLib/Classes/Helper/YLT_AuthorizationHelper.m; sourceTree = "<group>"; };
-		70442AD8FFAF6534E0124D82622CE7E9 /* YLT_UnionPay.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = YLT_UnionPay.mm; sourceTree = "<group>"; };
 		71365BFFFA9D09692B06263937C5E1EF /* UIAlertController+Blocks-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Blocks-prefix.pch"; sourceTree = "<group>"; };
-		7390DB2313F12262105BD20F8891E7AE /* YLT_PayManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLT_PayManager.m; path = YLT_Pay/Classes/YLT_PayManager.m; sourceTree = "<group>"; };
+		714BB39DAD9BFC4C15DC3FC993EE95EF /* YLT_Pay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLT_Pay-prefix.pch"; sourceTree = "<group>"; };
+		732746796DD10FC51CCF5C3038F95674 /* AlipaySDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AlipaySDK.bundle; path = YLT_Pay/Classes/AliPay/AlipaySDK.bundle; sourceTree = "<group>"; };
 		73B67D6BB0211A8BD460DC6A05190AD6 /* FastCoding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FastCoding-umbrella.h"; sourceTree = "<group>"; };
 		7734720EE4AB7CAE25F6C08026E59E24 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
 		783B4F3F36040580E42A5C491A4F5BA1 /* RMUniversalAlert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RMUniversalAlert-dummy.m"; sourceTree = "<group>"; };
@@ -416,48 +408,50 @@
 		78F120BD3D3CC49FC30A551C2C94CBAD /* NSString+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MJExtension.h"; path = "MJExtension/NSString+MJExtension.h"; sourceTree = "<group>"; };
 		79AA886BD9CD1E4A7A77AC9D91273C3B /* Pods-YLT_Pay_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YLT_Pay_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		7B8B8ED5D91D328740F34FCF8E7F5E3A /* RMUniversalAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RMUniversalAlert-prefix.pch"; sourceTree = "<group>"; };
-		7C8769AF7291A486E68C2F8F82F9DC51 /* YLT_IapPay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YLT_IapPay.m; sourceTree = "<group>"; };
 		7DC947830BE3F596006F960813A837F4 /* MJProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJProperty.h; path = MJExtension/MJProperty.h; sourceTree = "<group>"; };
+		7E83E3F2F8E63D4A08A5C6671D0B4B8F /* YLT_AliPay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YLT_AliPay.h; sourceTree = "<group>"; };
 		83AAE5A1E60C2A4241AB4348D7F8E59A /* NSObject+MJProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJProperty.m"; path = "MJExtension/NSObject+MJProperty.m"; sourceTree = "<group>"; };
 		83B9951BC3170267308B8C5F0A7B676F /* MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJExtension.h; path = MJExtension/MJExtension.h; sourceTree = "<group>"; };
 		85FB50C1A76FF7EAD45239A2116650D6 /* NSTimer+YLT_Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+YLT_Extension.m"; path = "YLT_BaseLib/Classes/Category/NSTimer+YLT_Extension.m"; sourceTree = "<group>"; };
-		868F0517C00EFB0B899F7F174FBD9F74 /* YLT_WeChatPay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YLT_WeChatPay.h; sourceTree = "<group>"; };
 		86EED38BE3E10E452F97B49C1AB659F5 /* NSArray+YLT_Log.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+YLT_Log.m"; path = "YLT_BaseLib/Classes/Category/NSArray+YLT_Log.m"; sourceTree = "<group>"; };
 		87BBDC9F77F6C0051DD0937B856DE1F7 /* MJProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJProperty.m; path = MJExtension/MJProperty.m; sourceTree = "<group>"; };
 		87F0CF9623F747D66C0208C2F58DDC7B /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		89D107CBFBD64768D2F69AA8677C6419 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
 		89ECCD9CC0C6A2AFA621398B7A5E4C03 /* YLT_FileHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLT_FileHelper.m; path = YLT_BaseLib/Classes/Helper/YLT_FileHelper.m; sourceTree = "<group>"; };
 		8AEBC42D9995FD251336A28F99B9A026 /* RMUniversalAlert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RMUniversalAlert-umbrella.h"; sourceTree = "<group>"; };
-		90B4435C813FA7F39DD16264250AC5EA /* YLT_Pay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLT_Pay-dummy.m"; sourceTree = "<group>"; };
 		9272272A8A6D5C3F367DD9DE28AD35B5 /* YLT_BaseLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YLT_BaseLib.framework; path = YLT_BaseLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9362418A363F742475F79C45696A8511 /* YLT_Pay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLT_Pay.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93ED5BC6E1C6764B181A455C64B887C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		94EE2741459C323285B7DB1B0A0F9066 /* YLT_AliPay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YLT_AliPay.m; sourceTree = "<group>"; };
 		95C3A0D1EB64401377FBCD79CA7CCC29 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
 		970163AEE07FFC86DC2037894ABDBC06 /* YLT_Pay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YLT_Pay.framework; path = YLT_Pay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97547438200891866672F9CBF34C80D9 /* RMPopoverPresentationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RMPopoverPresentationController.h; sourceTree = "<group>"; };
 		97E7EAE56C88F8415421C566E3E7F746 /* MJPropertyKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJPropertyKey.m; path = MJExtension/MJPropertyKey.m; sourceTree = "<group>"; };
 		988552CF6F64872AEEB4848330AE45E3 /* UIDevice+YLT_Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+YLT_Extension.h"; path = "YLT_BaseLib/Classes/Category/UIDevice+YLT_Extension.h"; sourceTree = "<group>"; };
+		9898E72CC78BD8F5DB519D142575153E /* YLT_IapPay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YLT_IapPay.h; sourceTree = "<group>"; };
 		9B2F79734CD10C5D2B15684F67C8B87B /* Pods-YLT_Pay_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YLT_Pay_Tests.modulemap"; sourceTree = "<group>"; };
 		9B8FDD03228EA4CF542A96D3F40D1894 /* FastCoding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FastCoding.framework; path = FastCoding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA99A5E3A7FB6BD58C532BEF46261F9 /* Pods-YLT_Pay_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YLT_Pay_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9C72098F0C2FA73B22BE60A26F8C4189 /* YLT_Pay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLT_Pay-umbrella.h"; sourceTree = "<group>"; };
 		9E9FDE9CAF59DF33109D4D7E465261A6 /* YLT_PhotoHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_PhotoHelper.h; path = YLT_BaseLib/Classes/Helper/YLT_PhotoHelper.h; sourceTree = "<group>"; };
+		9FC0C6EA330BF3D13B01C9571B9BD3D4 /* YLT_ApplePay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YLT_ApplePay.m; sourceTree = "<group>"; };
 		A0906B0A1982549D1442D4CCBA3396EF /* FastCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FastCoder.m; path = FastCoder/FastCoder.m; sourceTree = "<group>"; };
 		A0AA7DA6E874C9A7702A382923EEDCA9 /* YLT_PhotoHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLT_PhotoHelper.m; path = YLT_BaseLib/Classes/Helper/YLT_PhotoHelper.m; sourceTree = "<group>"; };
 		A1B8B382E0AAE5D58DD2661A34CC07CC /* UIActionSheet_Blocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIActionSheet_Blocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3190A686A3C3A81D256B78F2C6A5988 /* NSDate+YLT_Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+YLT_Extension.m"; path = "YLT_BaseLib/Classes/Category/NSDate+YLT_Extension.m"; sourceTree = "<group>"; };
+		A475EFF2E7AB5CEDB967AA9AA177DD5F /* YLT_PayError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLT_PayError.m; path = YLT_Pay/Classes/YLT_PayError.m; sourceTree = "<group>"; };
 		A506C68BD251D480445569AF637B0F1F /* YLT_BaseLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YLT_BaseLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D32DE0ABF51180CAACD6005662AE77 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJCoding.h"; path = "MJExtension/NSObject+MJCoding.h"; sourceTree = "<group>"; };
 		A89C268F2EAF3580290A91CFB17B97AB /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
 		A8B5DF93A2FDA68365F6A045460E4370 /* Pods-YLT_Pay_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YLT_Pay_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A989FDBF92FA1C943A5B088BCA89EE8A /* UIActionSheet+Blocks-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks-umbrella.h"; sourceTree = "<group>"; };
-		AAC7169AFDEC01A89AE3086ECA154283 /* YLT_IapPay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YLT_IapPay.h; sourceTree = "<group>"; };
 		AB20F31558479A8097F10A31FAAA1205 /* MJExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJExtension-prefix.pch"; sourceTree = "<group>"; };
+		ADCB6262D80D87CD26431DB2803C411C /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = YLT_Pay/Classes/AliPay/AlipaySDK.framework; sourceTree = "<group>"; };
+		ADCD79087791FE170E5231E8C5B34FDA /* YLT_WeChatPay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YLT_WeChatPay.m; sourceTree = "<group>"; };
 		AECC5B7BFBCE3687A28C0901A9F8D942 /* Pods-YLT_Pay_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YLT_Pay_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B0997417FE91A7535D28E9DCD8C7885A /* UIActionSheet+Blocks-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks-prefix.pch"; sourceTree = "<group>"; };
-		B0FC110599EF7A09BE3BE0521A367781 /* AlipaySDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		B288414C19DC06FFD214B66EB8F09B76 /* UIAlertView+Blocks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "UIAlertView+Blocks.modulemap"; sourceTree = "<group>"; };
+		B3A8AB9A681916A12FA8143FF0A7CCA6 /* YLT_Pay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLT_Pay-dummy.m"; sourceTree = "<group>"; };
+		B417FB221193C375D20A09E5095D2DCB /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		B7FE4D135BDCB4F9C5A43E1E5F210A22 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJProperty.h"; path = "MJExtension/NSObject+MJProperty.h"; sourceTree = "<group>"; };
 		B9F5CEBF7605439583FE29EB1C627A9F /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
 		B9F7BB4FFB5C44B8C079D86B754693F1 /* YLT_BaseMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_BaseMacro.h; path = YLT_BaseLib/Classes/Base/YLT_BaseMacro.h; sourceTree = "<group>"; };
@@ -466,13 +460,11 @@
 		BB79DA0D88E1D70AA17D26F4B845A867 /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FMDB.modulemap; sourceTree = "<group>"; };
 		BB8B37A3098D40B9E887E37EF6AFA127 /* MJExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJExtension-umbrella.h"; sourceTree = "<group>"; };
 		BB8DC4773B4641D50508D52AD40A2A12 /* NSObject+YLT_Safe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YLT_Safe.m"; path = "YLT_BaseLib/Classes/Category/NSObject+YLT_Safe.m"; sourceTree = "<group>"; };
-		BBC4D741D86EF0D28176A55E7CD6669F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		BC759143DF35D8ECEC96A40D6B874CB7 /* UIAlertController+Blocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Blocks.m"; sourceTree = "<group>"; };
 		BCDE8ADFFE86FD2C96A09E3B9DC4F4F1 /* YLT_AuthorizationHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_AuthorizationHelper.h; path = YLT_BaseLib/Classes/Helper/YLT_AuthorizationHelper.h; sourceTree = "<group>"; };
 		BCDF7AADC3AD3F67EAAA940FA3090317 /* UIAlertView+Blocks-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks-umbrella.h"; sourceTree = "<group>"; };
 		BD0B62B006B42AD316411382875614C9 /* Pods-YLT_Pay_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YLT_Pay_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDA18DC35BAA6E4EAF663B115D01C328 /* MJFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJFoundation.h; path = MJExtension/MJFoundation.h; sourceTree = "<group>"; };
-		BE54E74DE899AF8DC75EAD6EA8082A4A /* YLT_WeChatPay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YLT_WeChatPay.m; sourceTree = "<group>"; };
 		BE8634668D755157E2744B8BBF080D6B /* NSObject+YLT_Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YLT_Extension.h"; path = "YLT_BaseLib/Classes/Category/NSObject+YLT_Extension.h"; sourceTree = "<group>"; };
 		C2E94AD71F611E1F3C9FF4A776DEA6EA /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
 		C32076B383DA2EC9944991766B4015C0 /* UIAlertView+Blocks-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks-prefix.pch"; sourceTree = "<group>"; };
@@ -482,14 +474,16 @@
 		C4DC949F86FA34BD68050706AE11AE4E /* MJPropertyKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJPropertyKey.h; path = MJExtension/MJPropertyKey.h; sourceTree = "<group>"; };
 		C72CF35F134F235751DC4C1487B004B5 /* RMUniversalAlert.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RMUniversalAlert.xcconfig; sourceTree = "<group>"; };
 		C81916F5C4799B275E80912A874E3C29 /* UIActionSheet+Blocks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks-dummy.m"; sourceTree = "<group>"; };
-		C821268CE5571A47666689CD7CFAE1FF /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		C85A34E12571F54141902F322F29C8DC /* YLT_IapPay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YLT_IapPay.m; sourceTree = "<group>"; };
+		C87AD288AEB12CB699BCC42D01098BEF /* YLT_UnionPay.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = YLT_UnionPay.mm; sourceTree = "<group>"; };
+		C970BAA7A0E6146794D345BB22D623DF /* YLT_PayOrder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_PayOrder.h; path = YLT_Pay/Classes/YLT_PayOrder.h; sourceTree = "<group>"; };
 		C9E9D1323FFC1CA959933C819EAA4457 /* NSObject+YLT_Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YLT_Extension.m"; path = "YLT_BaseLib/Classes/Category/NSObject+YLT_Extension.m"; sourceTree = "<group>"; };
-		CCECFE6595038667CDF7DC944913499E /* YLT_ApplePay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YLT_ApplePay.m; sourceTree = "<group>"; };
+		CBAB912A50EC5B18977F7CD6AFBEAE26 /* YLT_AliPay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YLT_AliPay.m; sourceTree = "<group>"; };
 		CD523011EE36AB3CA575F7D729AD7DEB /* YLT_BaseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_BaseModel.h; path = YLT_BaseLib/Classes/Base/YLT_BaseModel.h; sourceTree = "<group>"; };
+		CE4E15CB242DD17C56EC53D46DB5972D /* YLT_Pay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLT_Pay-umbrella.h"; sourceTree = "<group>"; };
 		CF84F79B7966A5ECA0E6BDD99561796F /* MJExtensionConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJExtensionConst.h; path = MJExtension/MJExtensionConst.h; sourceTree = "<group>"; };
 		D02D502C0827299498D85325EACD2AAB /* FastCoding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FastCoding-dummy.m"; sourceTree = "<group>"; };
 		D0446878E41DE028ACF8E0446680B59C /* NSDictionary+YLT_Log.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+YLT_Log.h"; path = "YLT_BaseLib/Classes/Category/NSDictionary+YLT_Log.h"; sourceTree = "<group>"; };
-		D1AAF5BB18C4B49941AAD92FB5F512E4 /* UPPaymentControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
 		D266D5DDEFE0E0B5DAD1219DF70B8C84 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D267593AEE38D62126074E3D4FE35633 /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
 		D2CCF04080027B26AD75865AC9B1A43C /* YLT_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_Tools.h; path = YLT_BaseLib/Classes/Tools/YLT_Tools.h; sourceTree = "<group>"; };
@@ -498,6 +492,7 @@
 		D78A3F49D0131FEA9440009BC0D3A465 /* NSArray+YLT_Log.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+YLT_Log.h"; path = "YLT_BaseLib/Classes/Category/NSArray+YLT_Log.h"; sourceTree = "<group>"; };
 		D833D0442E09D6A861BC74885BD77325 /* NSObject+MJClass.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJClass.m"; path = "MJExtension/NSObject+MJClass.m"; sourceTree = "<group>"; };
 		D93E2E23AFD942E3DED18360F62075AD /* UIDevice+YLT_Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+YLT_Extension.m"; path = "YLT_BaseLib/Classes/Category/UIDevice+YLT_Extension.m"; sourceTree = "<group>"; };
+		DA1C1466F5A4D5990220653E54CC9A56 /* YLT_PayError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_PayError.h; path = YLT_Pay/Classes/YLT_PayError.h; sourceTree = "<group>"; };
 		DA8F89A3D63BA8E29D38EDE46091A7F9 /* UIAlertController_Blocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIAlertController_Blocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBBD2D7300C835A88BDA36203A8EADD1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCE4E4646735D03A1D45DA5557342D21 /* UIAlertView+Blocks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIAlertView+Blocks.xcconfig"; sourceTree = "<group>"; };
@@ -507,21 +502,22 @@
 		E0D4834601423F9623E02599DAD9C171 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJCoding.m"; path = "MJExtension/NSObject+MJCoding.m"; sourceTree = "<group>"; };
 		E1659DCB4AAA57FFEF3501C714792601 /* NSString+YLT_Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+YLT_Extension.h"; path = "YLT_BaseLib/Classes/Category/NSString+YLT_Extension.h"; sourceTree = "<group>"; };
 		E3926B6667E75D3671E33B6D8AACBDB4 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJKeyValue.m"; path = "MJExtension/NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
-		E5F93F77C14D3D52A4870E0D17F8FBF1 /* AlipaySDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AlipaySDK.h; sourceTree = "<group>"; };
+		E408C145B49524D7D21AC82A2CA79E64 /* YLT_Pay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YLT_Pay.modulemap; sourceTree = "<group>"; };
 		E613CF77A2DC3E95C98FFA26974E1780 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E65BCDB380728D7FB615A68B7893CCAB /* YLT_PayManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_PayManager.h; path = YLT_Pay/Classes/YLT_PayManager.h; sourceTree = "<group>"; };
 		E6FBE71FCB105C54F2CD8E058B6613A1 /* MJPropertyType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJPropertyType.m; path = MJExtension/MJPropertyType.m; sourceTree = "<group>"; };
 		E78519D21AFBCAFB0D8C91510791352C /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
 		E978B723BA98EA138CCB67E09960A438 /* Pods-YLT_Pay_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YLT_Pay_Example.modulemap"; sourceTree = "<group>"; };
 		EB266E08567A22B1D4E1E8241B75AEC6 /* UIAlertView_Blocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIAlertView_Blocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDD136879CDEAFDD6643898E055CAE83 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF899DF71DB844782D9AD0BD89E3E1C4 /* MJExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJExtension-dummy.m"; sourceTree = "<group>"; };
 		F2601CF9362DF535A187676C3AE254E4 /* FastCoding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FastCoding.xcconfig; sourceTree = "<group>"; };
 		F27E1F37CC70414E9D56D27AC09BEB73 /* NSObject+MJClass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJClass.h"; path = "MJExtension/NSObject+MJClass.h"; sourceTree = "<group>"; };
-		F4BA430C970531DC6F256040D1E540C6 /* YLT_PayError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLT_PayError.m; path = YLT_Pay/Classes/YLT_PayError.m; sourceTree = "<group>"; };
-		F639D54447DE60BFBFDCBC634B14F9F3 /* YLT_PayProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_PayProtocol.h; path = YLT_Pay/Classes/YLT_PayProtocol.h; sourceTree = "<group>"; };
 		F99FDE9609732C150CDF5BA87B2F33A0 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 		F9E25E858AD69A44DFAB0FCCE71F8B69 /* UIActionSheet_Blocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIActionSheet_Blocks.framework; path = "UIActionSheet+Blocks.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD35042EA02D48579E12B5AE5712DBDF /* NSDictionary+YLT_Log.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+YLT_Log.m"; path = "YLT_BaseLib/Classes/Category/NSDictionary+YLT_Log.m"; sourceTree = "<group>"; };
 		FD4673E109D8BFC1CE355AB94A97439B /* UIAlertController+Blocks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Blocks-dummy.m"; sourceTree = "<group>"; };
+		FDA9968F1567F65195976B69A6D9FECA /* YLT_UnionPay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YLT_UnionPay.h; sourceTree = "<group>"; };
 		FE2A4D6BE71855242A3B1DC755A3CC5F /* YLT_BaseLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLT_BaseLib-umbrella.h"; sourceTree = "<group>"; };
 		FE9377028700F5F9CE3EF89EBD1043E8 /* YLT_KeyChainHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLT_KeyChainHelper.h; path = YLT_BaseLib/Classes/Helper/YLT_KeyChainHelper.h; sourceTree = "<group>"; };
 		FF591B4B5AF4F6B01A403353A4951C9A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -644,6 +640,16 @@
 			path = "UIAlertController+Blocks";
 			sourceTree = "<group>";
 		};
+		0BB329141F4A78C1CEF316A1562053A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADCB6262D80D87CD26431DB2803C411C /* AlipaySDK.framework */,
+				3A35D601DEAB5EBB1ABC1D4D789A3BB1 /* libPaymentControl.a */,
+				6CD6E24429880B720BB8F35D83723DBC /* libWeChatSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		116F70B2A29C2541992941396141AFD6 /* UIAlertView+Blocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -701,14 +707,14 @@
 			path = "../Target Support Files/UIAlertController+Blocks";
 			sourceTree = "<group>";
 		};
-		2149C7C3EABA5B520F2E788E08C4BF62 /* ApplePay */ = {
+		25ECA0D7EBDEEF491091CA9438723382 /* AliPay */ = {
 			isa = PBXGroup;
 			children = (
-				6A379D834F41BD566C0FAE40133AF18C /* YLT_ApplePay.h */,
-				CCECFE6595038667CDF7DC944913499E /* YLT_ApplePay.m */,
+				7E83E3F2F8E63D4A08A5C6671D0B4B8F /* YLT_AliPay.h */,
+				CBAB912A50EC5B18977F7CD6AFBEAE26 /* YLT_AliPay.m */,
 			);
-			name = ApplePay;
-			path = YLT_Pay/Classes/ApplePay;
+			name = AliPay;
+			path = YLT_Pay/Classes/AliPay;
 			sourceTree = "<group>";
 		};
 		28DF9290A00750C271A90EC7C5996DD5 /* Frameworks */ = {
@@ -727,14 +733,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2EF520CCC5AC85B0E57EFA7B317682A4 /* Headers */ = {
+		2F08A6C18E76DC976B0FED451A0B2672 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E5F93F77C14D3D52A4870E0D17F8FBF1 /* AlipaySDK.h */,
-				673F5662FD4E8BBCE297B843BDBD994B /* APayAuthInfo.h */,
+				EDD136879CDEAFDD6643898E055CAE83 /* Info.plist */,
+				E408C145B49524D7D21AC82A2CA79E64 /* YLT_Pay.modulemap */,
+				9362418A363F742475F79C45696A8511 /* YLT_Pay.xcconfig */,
+				B3A8AB9A681916A12FA8143FF0A7CCA6 /* YLT_Pay-dummy.m */,
+				714BB39DAD9BFC4C15DC3FC993EE95EF /* YLT_Pay-prefix.pch */,
+				CE4E15CB242DD17C56EC53D46DB5972D /* YLT_Pay-umbrella.h */,
 			);
-			name = Headers;
-			path = Headers;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/YLT_Pay";
 			sourceTree = "<group>";
 		};
 		3B07565E1F9D46DAFC7C284A4C8B281D /* Pods-YLT_Pay_Example */ = {
@@ -755,26 +765,22 @@
 			path = "Target Support Files/Pods-YLT_Pay_Example";
 			sourceTree = "<group>";
 		};
-		3EA5A9364AD7CC82FFCE87E707E04D4E /* Frameworks */ = {
+		5CFDB21CF57ADA77CF5FECDC24A60046 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6A38A21EC646DA4118E1457F935C4435 /* libWeChatSDK.a */,
+				D0F1856DAFB50E8C9036C9377690CC42 /* YLT_Pay */,
 			);
-			name = Frameworks;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		5A29F1F2E21C19AE6A288152E5012EBF /* WeChatPay */ = {
+		5DD6F48837098C3682B33CB55028BE47 /* IapPay */ = {
 			isa = PBXGroup;
 			children = (
-				46EEB330895ADCD43C7A0B3EACE22480 /* WechatAuthSDK.h */,
-				C821268CE5571A47666689CD7CFAE1FF /* WXApi.h */,
-				54A1ADA91F279FFEDAB36F3291960358 /* WXApiObject.h */,
-				868F0517C00EFB0B899F7F174FBD9F74 /* YLT_WeChatPay.h */,
-				BE54E74DE899AF8DC75EAD6EA8082A4A /* YLT_WeChatPay.m */,
-				3EA5A9364AD7CC82FFCE87E707E04D4E /* Frameworks */,
+				9898E72CC78BD8F5DB519D142575153E /* YLT_IapPay.h */,
+				C85A34E12571F54141902F322F29C8DC /* YLT_IapPay.m */,
 			);
-			name = WeChatPay;
-			path = YLT_Pay/Classes/WeChatPay;
+			name = IapPay;
+			path = YLT_Pay/Classes/IapPay;
 			sourceTree = "<group>";
 		};
 		5F4309832AD1E428906DC335A07C0E1D /* Support Files */ = {
@@ -802,6 +808,19 @@
 			);
 			name = RMUniversalAlert;
 			path = RMUniversalAlert;
+			sourceTree = "<group>";
+		};
+		6B7378A5BD4DBD068B2BFFA80D335185 /* WeChatPay */ = {
+			isa = PBXGroup;
+			children = (
+				B417FB221193C375D20A09E5095D2DCB /* WechatAuthSDK.h */,
+				5931EF47546DB5E3B394383609CA9B27 /* WXApi.h */,
+				0426DCD8002BE6B92D01F4671074CA33 /* WXApiObject.h */,
+				5DB1367962F55D2BFB461FD1EBB2DA7A /* YLT_WeChatPay.h */,
+				ADCD79087791FE170E5231E8C5B34FDA /* YLT_WeChatPay.m */,
+			);
+			name = WeChatPay;
+			path = YLT_Pay/Classes/WeChatPay;
 			sourceTree = "<group>";
 		};
 		71A42E638B75BE3B437D50ABDEDD4850 /* Products */ = {
@@ -847,34 +866,11 @@
 			path = "../Target Support Files/UIActionSheet+Blocks";
 			sourceTree = "<group>";
 		};
-		7362A8957A1BFFD42F08B972D8D2133A /* YLT_Pay */ = {
-			isa = PBXGroup;
-			children = (
-				25779AC1653F56518A14CB0BC8D1C4CE /* YLT_Pay.h */,
-				1759ADEDCF6CF734138DDE1373BA1B4F /* YLT_PayError.h */,
-				F4BA430C970531DC6F256040D1E540C6 /* YLT_PayError.m */,
-				62C0FBF41A960EBA17385FAB19772461 /* YLT_PayManager.h */,
-				7390DB2313F12262105BD20F8891E7AE /* YLT_PayManager.m */,
-				06DAF103DCE0567BCF00DC46290714DC /* YLT_PayOrder.h */,
-				2B2512FAB27F6A15CBEEAFE9434EF5D6 /* YLT_PayOrder.m */,
-				F639D54447DE60BFBFDCBC634B14F9F3 /* YLT_PayProtocol.h */,
-				88037DDF0AA78F283A868AB6E7F48777 /* AliPay */,
-				2149C7C3EABA5B520F2E788E08C4BF62 /* ApplePay */,
-				F8DBAC67A67325FD865DF61D8CC955AE /* IapPay */,
-				F7142948C5E7C42C5B10894C164CBC59 /* Pod */,
-				EC4D8F544ADA8B576B1DFCEDDDACBDD5 /* Support Files */,
-				DCFF2885C893AB3DB9321818EC985498 /* UnionPay */,
-				5A29F1F2E21C19AE6A288152E5012EBF /* WeChatPay */,
-			);
-			name = YLT_Pay;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				AC613EED2061B12C917BEC8FC10E5F37 /* Development Pods */,
+				5CFDB21CF57ADA77CF5FECDC24A60046 /* Development Pods */,
 				28DF9290A00750C271A90EC7C5996DD5 /* Frameworks */,
 				9B2F3C3C1AE1A94F3CFB88D558D64279 /* Pods */,
 				71A42E638B75BE3B437D50ABDEDD4850 /* Products */,
@@ -894,19 +890,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/FastCoding";
-			sourceTree = "<group>";
-		};
-		88037DDF0AA78F283A868AB6E7F48777 /* AliPay */ = {
-			isa = PBXGroup;
-			children = (
-				56D59164AE7A5A55DA94A55BC1E478DD /* YLT_AliPay.h */,
-				94EE2741459C323285B7DB1B0A0F9066 /* YLT_AliPay.m */,
-				9AF305917D868727A288EA2E9680F6A1 /* AlipaySDK.framework */,
-				B914627FC2E94102706D9599DCE213C4 /* Frameworks */,
-				961492C6440EAEEE426590C38AA1F5C2 /* Resources */,
-			);
-			name = AliPay;
-			path = YLT_Pay/Classes/AliPay;
 			sourceTree = "<group>";
 		};
 		8F689739CDEA5E4C2601CBA97C386812 /* Targets Support Files */ = {
@@ -932,10 +915,10 @@
 			path = "../Target Support Files/FMDB";
 			sourceTree = "<group>";
 		};
-		961492C6440EAEEE426590C38AA1F5C2 /* Resources */ = {
+		93B1FC5A106B0237271E796347997C3C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B0FC110599EF7A09BE3BE0521A367781 /* AlipaySDK.bundle */,
+				732746796DD10FC51CCF5C3038F95674 /* AlipaySDK.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -970,15 +953,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/YLT_BaseLib";
-			sourceTree = "<group>";
-		};
-		9AF305917D868727A288EA2E9680F6A1 /* AlipaySDK.framework */ = {
-			isa = PBXGroup;
-			children = (
-				2EF520CCC5AC85B0E57EFA7B317682A4 /* Headers */,
-			);
-			name = AlipaySDK.framework;
-			path = AlipaySDK.framework;
 			sourceTree = "<group>";
 		};
 		9B2F3C3C1AE1A94F3CFB88D558D64279 /* Pods */ = {
@@ -1054,30 +1028,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		AC613EED2061B12C917BEC8FC10E5F37 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7362A8957A1BFFD42F08B972D8D2133A /* YLT_Pay */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		ACDC0551662153459714D32C4A0FD770 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3B3E43FB147FCA5E850B4D4D31D1C5A1 /* libPaymentControl.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B914627FC2E94102706D9599DCE213C4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				21FEBF72669641733BB780866CA297B6 /* AlipaySDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		BB9329DD402DD75D99598BB16535B240 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1092,6 +1042,51 @@
 			path = "../Target Support Files/RMUniversalAlert";
 			sourceTree = "<group>";
 		};
+		C52AE1570DECFDC8F28B19E45CC08860 /* ApplePay */ = {
+			isa = PBXGroup;
+			children = (
+				5E5BC8E6C8474C11F89F717928628A6E /* YLT_ApplePay.h */,
+				9FC0C6EA330BF3D13B01C9571B9BD3D4 /* YLT_ApplePay.m */,
+			);
+			name = ApplePay;
+			path = YLT_Pay/Classes/ApplePay;
+			sourceTree = "<group>";
+		};
+		D09857A9E9F6B5C4AC47AC19B82C4596 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				06310ED6185DEE7B3277F78C06AC8D5D /* LICENSE */,
+				5FF6A678C3E056C54B7E98F8C9DB6F61 /* README.md */,
+				59B59F1103A945BF33EC3C746BE6DDA8 /* YLT_Pay.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		D0F1856DAFB50E8C9036C9377690CC42 /* YLT_Pay */ = {
+			isa = PBXGroup;
+			children = (
+				42FCC67AE69BFF5C4AC409ACBCE4E287 /* YLT_Pay.h */,
+				DA1C1466F5A4D5990220653E54CC9A56 /* YLT_PayError.h */,
+				A475EFF2E7AB5CEDB967AA9AA177DD5F /* YLT_PayError.m */,
+				E65BCDB380728D7FB615A68B7893CCAB /* YLT_PayManager.h */,
+				4DBD643CFD2060814ED076B6735E2B4B /* YLT_PayManager.m */,
+				C970BAA7A0E6146794D345BB22D623DF /* YLT_PayOrder.h */,
+				3D60AE08F76EF07882A33D295A981168 /* YLT_PayOrder.m */,
+				05D6293A00205BEED7F083E95CB3A275 /* YLT_PayProtocol.h */,
+				25ECA0D7EBDEEF491091CA9438723382 /* AliPay */,
+				C52AE1570DECFDC8F28B19E45CC08860 /* ApplePay */,
+				0BB329141F4A78C1CEF316A1562053A0 /* Frameworks */,
+				5DD6F48837098C3682B33CB55028BE47 /* IapPay */,
+				D09857A9E9F6B5C4AC47AC19B82C4596 /* Pod */,
+				93B1FC5A106B0237271E796347997C3C /* Resources */,
+				2F08A6C18E76DC976B0FED451A0B2672 /* Support Files */,
+				EC6609143D4C4DD14D6C6EF9AE103990 /* UnionPay */,
+				6B7378A5BD4DBD068B2BFFA80D335185 /* WeChatPay */,
+			);
+			name = YLT_Pay;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		D54AEF9A7DF2C0BAC9ED983AB1B63FB0 /* FastCoding */ = {
 			isa = PBXGroup;
 			children = (
@@ -1103,30 +1098,15 @@
 			path = FastCoding;
 			sourceTree = "<group>";
 		};
-		DCFF2885C893AB3DB9321818EC985498 /* UnionPay */ = {
+		EC6609143D4C4DD14D6C6EF9AE103990 /* UnionPay */ = {
 			isa = PBXGroup;
 			children = (
-				D1AAF5BB18C4B49941AAD92FB5F512E4 /* UPPaymentControl.h */,
-				2F21E905C5B0EF2A03053E02742D6B5D /* YLT_UnionPay.h */,
-				70442AD8FFAF6534E0124D82622CE7E9 /* YLT_UnionPay.mm */,
-				ACDC0551662153459714D32C4A0FD770 /* Frameworks */,
+				51C8EA38BCD066DACF56E687C3E2FB98 /* UPPaymentControl.h */,
+				FDA9968F1567F65195976B69A6D9FECA /* YLT_UnionPay.h */,
+				C87AD288AEB12CB699BCC42D01098BEF /* YLT_UnionPay.mm */,
 			);
 			name = UnionPay;
 			path = YLT_Pay/Classes/UnionPay;
-			sourceTree = "<group>";
-		};
-		EC4D8F544ADA8B576B1DFCEDDDACBDD5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				19DAAADF42E23543CE8E0E5C5DD958BF /* Info.plist */,
-				144B1E13570FC6E7998A345C1D0848F5 /* YLT_Pay.modulemap */,
-				3EE520D3C64F06432A1505EAE95AC983 /* YLT_Pay.xcconfig */,
-				90B4435C813FA7F39DD16264250AC5EA /* YLT_Pay-dummy.m */,
-				0374330DA3EE86593F7159FC6C0CB555 /* YLT_Pay-prefix.pch */,
-				9C72098F0C2FA73B22BE60A26F8C4189 /* YLT_Pay-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/YLT_Pay";
 			sourceTree = "<group>";
 		};
 		F11BDDECCD007893360F85D2E686D371 /* FMDB */ = {
@@ -1137,26 +1117,6 @@
 			);
 			name = FMDB;
 			path = FMDB;
-			sourceTree = "<group>";
-		};
-		F7142948C5E7C42C5B10894C164CBC59 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				BBC4D741D86EF0D28176A55E7CD6669F /* LICENSE */,
-				15B19CEC6C0B2F13EDB6CC2D6B9B20B7 /* README.md */,
-				3D3F87E53EA0BD7CB138C41011B4B256 /* YLT_Pay.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		F8DBAC67A67325FD865DF61D8CC955AE /* IapPay */ = {
-			isa = PBXGroup;
-			children = (
-				AAC7169AFDEC01A89AE3086ECA154283 /* YLT_IapPay.h */,
-				7C8769AF7291A486E68C2F8F82F9DC51 /* YLT_IapPay.m */,
-			);
-			name = IapPay;
-			path = YLT_Pay/Classes/IapPay;
 			sourceTree = "<group>";
 		};
 		FFA59A9487E93D7B4D895B6540C3BCCC /* MJExtension */ = {
@@ -1278,6 +1238,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D892030DBB8C2798AA3A582E2EBF412 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E223ECC49E11C0E8D1EC40F813BBDE /* UPPaymentControl.h in Headers */,
+				78A62ABEC255AB4E440F18EE292BD40E /* WechatAuthSDK.h in Headers */,
+				41A6BF119C6A8DA64E3B0B7EEE4562A0 /* WXApi.h in Headers */,
+				28DAE1F6A9BC1623D5BC31D286FAEF69 /* WXApiObject.h in Headers */,
+				FB75973751E09E9211321781C7BC774D /* YLT_AliPay.h in Headers */,
+				E4F8867752F1E218DF6877FE07EFB37C /* YLT_ApplePay.h in Headers */,
+				86D9BB9AE569A7C11F5710843F1605AC /* YLT_IapPay.h in Headers */,
+				995C3903132F4C9F7A5928C00749FA5D /* YLT_Pay-umbrella.h in Headers */,
+				DA4D9BAC74B5A802A9D93150B98CDCC7 /* YLT_Pay.h in Headers */,
+				29BB7B0F755ADBE7CEC59E84B0D938ED /* YLT_PayError.h in Headers */,
+				420FC6A2A846BDE61E5EC1BD0A687031 /* YLT_PayManager.h in Headers */,
+				FB5760542D78BD01B657C8D0653ABBA5 /* YLT_PayOrder.h in Headers */,
+				60139F322AA9C4D63D34C8B51CAA50FC /* YLT_PayProtocol.h in Headers */,
+				389119C7B2FC5C6F285F393E96D830CE /* YLT_UnionPay.h in Headers */,
+				40B5BF71AE4AE20B7FBE26E5AF098B8C /* YLT_WeChatPay.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5BA3500BD63BCF1CC7BDC6EC42AA9BA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1313,30 +1295,6 @@
 				B7B68FDABB146B87FA3C9E987D2014DE /* NSObject+MJKeyValue.h in Headers */,
 				383448308BB9C5CB67073E0A8DED4A43 /* NSObject+MJProperty.h in Headers */,
 				5BD2A9D0D752792C18F1E7F6CDBEB0FA /* NSString+MJExtension.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F4FA6221C1DF66342EA23C0F275804CF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22199E0D00B986EA3CF0C8E729C84660 /* AlipaySDK.h in Headers */,
-				7388E958A26AE57A60932F0D6F2C402C /* APayAuthInfo.h in Headers */,
-				AC9F51BC592E81649D4360D687C74879 /* UPPaymentControl.h in Headers */,
-				96659B39183F989EE0224A37D7D97C39 /* WechatAuthSDK.h in Headers */,
-				0351D1474936A6D764CC8B9F747ECA79 /* WXApi.h in Headers */,
-				3445A6D95A9EE719CC54A4C046D81915 /* WXApiObject.h in Headers */,
-				701D89D295854D34492728FEF11A363C /* YLT_AliPay.h in Headers */,
-				C21D9FD647593E89A72A021F1DDD0440 /* YLT_ApplePay.h in Headers */,
-				2A68D3847DB578F54A8CF1E27F5A74B5 /* YLT_IapPay.h in Headers */,
-				6E06AA755B5407E46A15D06281957982 /* YLT_Pay-umbrella.h in Headers */,
-				6941D8EAA30BD05F9BC784771EA8365D /* YLT_Pay.h in Headers */,
-				E6A549C68ED95F5A9563DC06B6CC5649 /* YLT_PayError.h in Headers */,
-				4879EEDD8616320E3E9AE29323F822C5 /* YLT_PayManager.h in Headers */,
-				50A541EADCA484370ADA9DE17D0DB85E /* YLT_PayOrder.h in Headers */,
-				CB148C4AB5D52188E4AF18825D61BEFE /* YLT_PayProtocol.h in Headers */,
-				32EF4BDB0CC581F8297BA3896007A9A8 /* YLT_UnionPay.h in Headers */,
-				E5A2DACF8D4503EA7C40BFC08AC13216 /* YLT_WeChatPay.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1454,8 +1412,8 @@
 			buildPhases = (
 				B7CF9C00B228243C41DBC8D636976629 /* Sources */,
 				319EC6F339164B1F433C126BABEB4BF8 /* Frameworks */,
-				F4FA6221C1DF66342EA23C0F275804CF /* Headers */,
-				E1E991B22FFD12F734624A175F4C7CB7 /* Resources */,
+				9D892030DBB8C2798AA3A582E2EBF412 /* Headers */,
+				726973979CD3F7EE0AFA9E67F5366732 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1589,11 +1547,11 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E1E991B22FFD12F734624A175F4C7CB7 /* Resources */ = {
+		726973979CD3F7EE0AFA9E67F5366732 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36A37CBBDBE1EAF9BD55EB752C2B8564 /* AlipaySDK.bundle in Resources */,
+				32F73436581F820E09022BEB064BBBF3 /* AlipaySDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2165,7 +2123,7 @@
 		};
 		70EC303FC3620E01520A924A16F4EF2A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EE520D3C64F06432A1505EAE95AC983 /* YLT_Pay.xcconfig */;
+			baseConfigurationReference = 9362418A363F742475F79C45696A8511 /* YLT_Pay.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2317,7 +2275,7 @@
 		};
 		9D61B8D0D1B0D84CE0CA564B70784DE4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EE520D3C64F06432A1505EAE95AC983 /* YLT_Pay.xcconfig */;
+			baseConfigurationReference = 9362418A363F742475F79C45696A8511 /* YLT_Pay.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

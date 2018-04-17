@@ -1,0 +1,58 @@
+{
+  "name": "YLT_Pay",
+  "version": "0.1.0",
+  "summary": "支付方式集成",
+  "description": "AliPay、WeChatPay、UnionPay、ApplePay等支付方式集成",
+  "homepage": "https://github.com/YLTTeam/YLT_Pay.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "xphaijj0305@126.com": "xianggong@126.com"
+  },
+  "source": {
+    "git": "https://github.com/YLTTeam/YLT_Pay.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "YLT_Pay/Classes/**/*.{h,m}",
+  "public_header_files": "YLT_Pay/Classes/**/*.h",
+  "libraries": "z",
+  "dependencies": {
+    "YLT_BaseLib": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "AliPay",
+      "source_files": [
+        "YLT_Pay/Classes/AliPay/*.{h,m}",
+        "YLT_Pay/Classes/AliPay/Util/*.{h,m}"
+      ],
+      "public_header_files": [
+        "YLT_Pay/Classes/AliPay/*.h",
+        "PHPayLib/Classes/AliPay/Util/*.h"
+      ],
+      "vendored_frameworks": "YLT_Pay/Classes/Alipay/*.framework",
+      "resources": "YLT_Pay/Classes/Alipay/*.bundle"
+    },
+    {
+      "name": "WeChatPay",
+      "source_files": "YLT_Pay/Classes/WeChatPay/*.{h,m}",
+      "public_header_files": "YLT_Pay/Classes/WeChatPay/*.h",
+      "vendored_libraries": "YLT_Pay/Classes/WeChatPay/*.a",
+      "libraries": "sqlite3.0"
+    },
+    {
+      "name": "UnionPay",
+      "source_files": "YLT_Pay/Classes/UnionPay/*.{h,m,mm}",
+      "public_header_files": "YLT_Pay/Classes/UnionPay/*.h",
+      "vendored_libraries": "YLT_Pay/Classes/UnionPay/*.a",
+      "frameworks": "CoreMotion"
+    }
+  ]
+}

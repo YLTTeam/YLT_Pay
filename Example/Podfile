@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YLT_Pay_Example' do
+  pod 'YLT_Pay', :path => '../'
+
+  target 'YLT_Pay_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

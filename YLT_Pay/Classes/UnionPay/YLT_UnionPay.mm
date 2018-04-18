@@ -7,7 +7,7 @@
 
 #import "YLT_UnionPay.h"
 #import "UPPaymentControl.h"
-#import "YLT_PayOrder.h"
+#import "YLT_UnionPayOrder.h"
 
 @interface YLT_UnionPay () {
 }
@@ -15,7 +15,7 @@
 /**
  订单信息
  */
-@property (nonatomic, strong) YLT_PayOrder *payOrder;
+@property (nonatomic, strong) YLT_UnionPayOrder *payOrder;
 
 /**
  回调
@@ -32,7 +32,15 @@
  @param order 订单信息
  @return 有效性 YES:有效  NO:无效
  */
-- (BOOL)ylt_orderInvalid:(YLT_PayOrder *)order {
+- (BOOL)ylt_orderInvalid:(YLT_UnionPayOrder *)order {
+    if (![order isKindOfClass:[YLT_UnionPayOrder class]]) {
+        self.complation(order, [YLT_PayErrorUtils create:YLT_PayCodeErrorParams]);
+        return NO;
+    }
+    if (!order.tn.ylt_isValid) {
+        self.complation(order, [YLT_PayErrorUtils create:YLT_PayCodeErrorParams]);
+        return NO;
+    }
     return YES;
 }
 
@@ -43,15 +51,16 @@
  @param targetVC 目标VC
  @param complation 回调
  */
-- (void)ylt_payOrder:(YLT_PayOrder *)order
+- (void)ylt_payOrder:(YLT_UnionPayOrder *)order
             targetVC:(UIViewController *)targetVC
           complation:(void(^)(id response, YLT_PayError *error))complation {
-    _payOrder = order;
-    _complation = complation;
+    self.complation = complation;
     YLT_MAIN(^{
-        NSString *tn = [self.payOrder.credential objectForKey:@"tn"];
-        NSString *mode = [self.payOrder.credential objectForKey:@"mode"];
-        BOOL isSuccess = [[UPPaymentControl defaultControl] startPay:tn fromScheme:self.payOrder.scheme mode:mode viewController:targetVC];
+        if ([self ylt_orderInvalid:order]) {
+            return ;
+        }
+        self.payOrder = order;
+        BOOL isSuccess = [[UPPaymentControl defaultControl] startPay:self.payOrder.tn fromScheme:self.payOrder.scheme mode:self.payOrder.mode viewController:targetVC];
         if (!isSuccess) {
             self.complation(self.payOrder, [YLT_PayErrorUtils create:YLT_PayCodeErrorCall]);
         }

@@ -12,12 +12,24 @@
 #import "YLT_UnionPay.h"
 #import "YLT_WeChatPay.h"
 
+
+#define PAY_WXPAY @"YLT_WeChatPayOrder"
+#define PAY_UNIONPAY @"YLT_UnionPayOrder"
+#define PAY_ALIPAY @"YLT_AliPayOrder"
+#define PAY_APPLE @"YLT_ApplePayOrder"
+#define PAY_IAP @"YLT_IapPayOrder"
+
 @interface YLT_PayManager()
 
 /**
  支付渠道信息
  */
 @property (nonatomic, strong) NSDictionary *channelInfo;
+
+/**
+ 回调
+ */
+@property (nonatomic, copy) void(^complation)(id response, YLT_PayError *error);
 
 /**
  订单信息
@@ -41,6 +53,31 @@ YLT_ShareInstance(YLT_PayManager);
 }
 
 /**
+ 检验订单信息的有效性
+ 
+ @param order 订单信息
+ @return 有效性 YES:有效  NO:无效
+ */
+- (BOOL)ylt_orderInvalid:(YLT_PayOrder *)order {
+    //订单参数异常
+    if (order == nil) {
+        self.complation(@"订单参数异常", [YLT_PayErrorUtils create:YLT_PayCodeErrorParams]);
+        return NO;
+    }
+    //支付渠道不存在
+    if (![self.channelInfo.allKeys containsObject:NSStringFromClass([order class])]) {
+        self.complation(order, [YLT_PayErrorUtils create:YLT_PayCodeInvalidChannel]);
+        return NO;
+    }
+    
+    //支付参数的校验 粗略校验，非常规范的校验 在每个支付方式里面单独校验
+    if (![YLT_PayErrorUtils invalidOrderInfo:order complation:self.complation]) {
+        return NO;
+    }
+    return YES;
+}
+
+/**
  调用支付
  
  @param order 订单信息
@@ -58,16 +95,7 @@ YLT_ShareInstance(YLT_PayManager);
             }
         };
     }
-    //订单参数异常
-    if (order == nil) {
-        complation(@"订单参数异常", [YLT_PayErrorUtils create:YLT_PayCodeErrorParams]);
-        return;
-    }
-    //支付渠道不存在
-    if (![self.channelInfo.allKeys containsObject:order.channel]) {
-        complation(order, [YLT_PayErrorUtils create:YLT_PayCodeInvalidChannel]);
-        return;
-    }
+    
     //找不到依附的VC
     if (targetVC == nil) {
         targetVC = self.ylt_currentVC;
@@ -76,25 +104,27 @@ YLT_ShareInstance(YLT_PayManager);
             return;
         }
     }
-    //支付参数的校验 粗略校验，非常规范的校验 在每个支付方式里面单独校验
-    if (![YLT_PayErrorUtils invalidOrderInfo:order complation:complation]) {
+    
+    self.payOrder = order;
+    self.complation = complation;
+    
+    //基础参数校验
+    if (![self ylt_orderInvalid:self.payOrder]) {
         return;
     }
     
-    _payOrder = order;
-    id<YLT_PayProtocol> pay = [self.channelInfo objectForKey:_payOrder.channel];
+    id<YLT_PayProtocol> pay = [self.channelInfo objectForKey:NSStringFromClass([self.payOrder class])];
     if (pay == nil) {
         complation(_payOrder, [YLT_PayErrorUtils create:YLT_PayCodeInvalidChannel]);
         return;
     }
-    
-    if (![pay ylt_orderInvalid:_payOrder]) {
-        complation(_payOrder, [YLT_PayErrorUtils create:YLT_PayCodeErrorParams]);
+    //针对每种支付方式单独校验
+    if (![pay ylt_orderInvalid:self.payOrder]) {
         return;
     }
     
     @try {
-        [pay ylt_payOrder:_payOrder targetVC:targetVC complation:complation];
+        [pay ylt_payOrder:self.payOrder targetVC:targetVC complation:complation];
     } @catch (NSException *e) {
     } @finally {
     }
@@ -108,7 +138,7 @@ YLT_ShareInstance(YLT_PayManager);
  */
 - (BOOL)ylt_handleOpenURL:(NSURL *)url
                   options:(NSDictionary *)options {
-    return [[self.channelInfo objectForKey:self.payOrder.channel] ylt_handleOpenURL:url options:options];
+    return [[self.channelInfo objectForKey:NSStringFromClass([self.payOrder class])] ylt_handleOpenURL:url options:options];
 }
 
 @end

@@ -1,21 +1,8 @@
-#
-# Be sure to run `pod lib lint YLT_Pay.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
   s.name             = 'YLT_Pay'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = '支付方式集成'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
 AliPay、WeChatPay、UnionPay、ApplePay等支付方式集成
@@ -30,21 +17,51 @@ AliPay、WeChatPay、UnionPay、ApplePay等支付方式集成
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'YLT_Pay/Classes/*.{h,m}','YLT_Pay/Classes/AliPay/*.{h,m}','YLT_Pay/Classes/AliPay/Util/*.{h,m}','YLT_Pay/Classes/WeChatPay/*.{h,m}','YLT_Pay/Classes/UnionPay/*.{h,m,mm}','YLT_Pay/Classes/ApplePay/*.{h,m}','YLT_Pay/Classes/IapPay/*.{h,m}'
-  s.public_header_files = 'YLT_Pay/Classes/*.h','YLT_Pay/Classes/AliPay/*.h','PHPayLib/Classes/AliPay/Util/*.h','YLT_Pay/Classes/WeChatPay/*.h','YLT_Pay/Classes/UnionPay/*.h','YLT_Pay/Classes/ApplePay/*.h','YLT_Pay/Classes/IapPay/*.h'
-  s.frameworks = 'CoreMotion'
-  s.libraries = 'z','sqlite3.0','c++'
-  
-  s.xcconfig = {
-      'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
-      'CLANG_CXX_LIBRARY' => 'libc++'
-  }
-  
-  s.vendored_frameworks = 'YLT_Pay/Classes/Alipay/*.framework'
-  s.vendored_libraries = 'YLT_Pay/Classes/WeChatPay/*.a','YLT_Pay/Classes/UnionPay/*.a'
-  s.resources = 'YLT_Pay/Classes/Alipay/*.bundle'
-  
+  s.source_files = 'YLT_Pay/Classes/*.{h,m}'
+  s.public_header_files = 'YLT_Pay/Classes/*.h'
+  s.libraries = 'z','sqlite3.0'
   s.dependency 'YLT_BaseLib'
-  #s.dependency 'OpenSSL-Universal'
+  
+  s.header_mappings_dir = 'YLT_Pay/Classes/**'
+  
+  s.subspec 'AliPay' do |sp|
+      sp.source_files = 'YLT_Pay/Classes/AliPay/*.{h,m}','YLT_Pay/Classes/AliPay/Util/*.{h,m}','YLT_Pay/Classes/AliPay/OpenSSL/*.h'
+      sp.public_header_files = 'YLT_Pay/Classes/AliPay/*.h','YLT_Pay/Classes/AliPay/Util/*.h','YLT_Pay/Classes/AliPay/OpenSSL/*.h'
+      sp.vendored_frameworks = 'YLT_Pay/Classes/Alipay/*.framework'
+      sp.vendored_libraries = 'YLT_Pay/Classes/Alipay/lib/*.a'
+      sp.resources = 'YLT_Pay/Classes/Alipay/*.bundle'
+      sp.header_mappings_dir = 'YLT_Pay/Classes/AliPay/**'
+      sp.xcconfig = {
+          'HEADER_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/YLT_Pay/Classes/AliPay/'
+      }
+  end
+  
+  s.subspec 'WeChatPay' do |sp|
+      sp.source_files = 'YLT_Pay/Classes/WeChatPay/*.{h,m}'
+      sp.public_header_files = 'YLT_Pay/Classes/WeChatPay/*.h'
+      sp.vendored_libraries = 'YLT_Pay/Classes/WeChatPay/*.a'
+  end
+  
+  s.subspec 'UnionPay' do |sp|
+      sp.source_files = 'YLT_Pay/Classes/UnionPay/*.{h,m,mm}'
+      sp.public_header_files = 'YLT_Pay/Classes/UnionPay/*.h'
+      sp.vendored_libraries = 'YLT_Pay/Classes/UnionPay/*.a'
+      sp.frameworks = 'CoreMotion'
+      sp.libraries = 'stdc++'
+      #sp.xcconfig = {
+      #   'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
+      #    'CLANG_CXX_LIBRARY' => 'libc++'
+      #}
+  end
+  
+  s.subspec 'ApplePay' do |sp|
+      sp.source_files = 'YLT_Pay/Classes/ApplePay/*.{h,m}'
+      sp.public_header_files = 'YLT_Pay/Classes/ApplePay/*.h'
+  end
+  
+  s.subspec 'IapPay' do |sp|
+      sp.source_files = 'YLT_Pay/Classes/IapPay/*.{h,m}'
+      sp.public_header_files = 'YLT_Pay/Classes/IapPay/*.h'
+  end
   
 end

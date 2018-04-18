@@ -10,12 +10,6 @@
 #import "YLT_PayOrder.h"
 #import "YLT_PayError.h"
 
-#define PAY_WXPAY @"wxpay"
-#define PAY_UNIONPAY @"unionpay"
-#define PAY_ALIPAY @"alipay"
-#define PAY_APPLE @"applepay"
-#define PAY_IAP @"iappay"
-
 @protocol YLT_PayProtocol <NSObject>
 
 /**

@@ -18,43 +18,62 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": [
-    "YLT_Pay/Classes/*.{h,m}",
-    "YLT_Pay/Classes/AliPay/*.{h,m}",
-    "YLT_Pay/Classes/AliPay/Util/*.{h,m}",
-    "YLT_Pay/Classes/WeChatPay/*.{h,m}",
-    "YLT_Pay/Classes/UnionPay/*.{h,m,mm}",
-    "YLT_Pay/Classes/ApplePay/*.{h,m}",
-    "YLT_Pay/Classes/IapPay/*.{h,m}"
-  ],
-  "public_header_files": [
-    "YLT_Pay/Classes/*.h",
-    "YLT_Pay/Classes/AliPay/*.h",
-    "PHPayLib/Classes/AliPay/Util/*.h",
-    "YLT_Pay/Classes/WeChatPay/*.h",
-    "YLT_Pay/Classes/UnionPay/*.h",
-    "YLT_Pay/Classes/ApplePay/*.h",
-    "YLT_Pay/Classes/IapPay/*.h"
-  ],
-  "frameworks": "CoreMotion",
+  "source_files": "YLT_Pay/Classes/*.{h,m}",
+  "public_header_files": "YLT_Pay/Classes/*.h",
   "libraries": [
     "z",
-    "sqlite3.0",
-    "c++"
+    "sqlite3.0"
   ],
-  "xcconfig": {
-    "CLANG_CXX_LANGUAGE_STANDARD": "c++11",
-    "CLANG_CXX_LIBRARY": "libc++"
-  },
-  "vendored_frameworks": "YLT_Pay/Classes/Alipay/*.framework",
-  "vendored_libraries": [
-    "YLT_Pay/Classes/WeChatPay/*.a",
-    "YLT_Pay/Classes/UnionPay/*.a"
-  ],
-  "resources": "YLT_Pay/Classes/Alipay/*.bundle",
   "dependencies": {
     "YLT_BaseLib": [
 
     ]
-  }
+  },
+  "header_mappings_dir": "YLT_Pay/Classes/**",
+  "subspecs": [
+    {
+      "name": "AliPay",
+      "source_files": [
+        "YLT_Pay/Classes/AliPay/*.{h,m}",
+        "YLT_Pay/Classes/AliPay/Util/*.{h,m}",
+        "YLT_Pay/Classes/AliPay/OpenSSL/*.h"
+      ],
+      "public_header_files": [
+        "YLT_Pay/Classes/AliPay/*.h",
+        "YLT_Pay/Classes/AliPay/Util/*.h",
+        "YLT_Pay/Classes/AliPay/OpenSSL/*.h"
+      ],
+      "vendored_frameworks": "YLT_Pay/Classes/Alipay/*.framework",
+      "vendored_libraries": "YLT_Pay/Classes/Alipay/lib/*.a",
+      "resources": "YLT_Pay/Classes/Alipay/*.bundle",
+      "header_mappings_dir": "YLT_Pay/Classes/AliPay/**",
+      "xcconfig": {
+        "HEADER_SEARCH_PATHS": "$(inherited) $(PODS_ROOT)/YLT_Pay/Classes/AliPay/"
+      }
+    },
+    {
+      "name": "WeChatPay",
+      "source_files": "YLT_Pay/Classes/WeChatPay/*.{h,m}",
+      "public_header_files": "YLT_Pay/Classes/WeChatPay/*.h",
+      "vendored_libraries": "YLT_Pay/Classes/WeChatPay/*.a"
+    },
+    {
+      "name": "UnionPay",
+      "source_files": "YLT_Pay/Classes/UnionPay/*.{h,m,mm}",
+      "public_header_files": "YLT_Pay/Classes/UnionPay/*.h",
+      "vendored_libraries": "YLT_Pay/Classes/UnionPay/*.a",
+      "frameworks": "CoreMotion",
+      "libraries": "stdc++"
+    },
+    {
+      "name": "ApplePay",
+      "source_files": "YLT_Pay/Classes/ApplePay/*.{h,m}",
+      "public_header_files": "YLT_Pay/Classes/ApplePay/*.h"
+    },
+    {
+      "name": "IapPay",
+      "source_files": "YLT_Pay/Classes/IapPay/*.{h,m}",
+      "public_header_files": "YLT_Pay/Classes/IapPay/*.h"
+    }
+  ]
 }

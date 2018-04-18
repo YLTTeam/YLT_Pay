@@ -8,7 +8,7 @@
 #import "YLT_WeChatPay.h"
 #import "WXApi.h"
 #import "WXApiObject.h"
-#import "YLT_PayOrder.h"
+#import "YLT_WeChatPayOrder.h"
 
 @interface YLT_WeChatPay()<WXApiDelegate> {
 }
@@ -16,7 +16,7 @@
 /**
  订单信息
  */
-@property (nonatomic, strong) YLT_PayOrder *payOrder;
+@property (nonatomic, strong) YLT_WeChatPayOrder *payOrder;
 
 /**
  回调
@@ -33,7 +33,15 @@
  @param order 订单信息
  @return 有效性 YES:有效  NO:无效
  */
-- (BOOL)ylt_orderInvalid:(YLT_PayOrder *)order {
+- (BOOL)ylt_orderInvalid:(YLT_WeChatPayOrder *)order {
+    if (![order isKindOfClass:[YLT_WeChatPayOrder class]]) {
+        self.complation(order, [YLT_PayErrorUtils create:YLT_PayCodeErrorParams]);
+        return NO;
+    }
+    if (!order.partnerId.ylt_isValid) {
+        self.complation(order, [YLT_PayErrorUtils create:YLT_PayCodeErrorParams]);
+        return NO;
+    }
     return YES;
 }
 
@@ -44,21 +52,23 @@
  @param targetVC 目标VC
  @param complation 回调
  */
-- (void)ylt_payOrder:(YLT_PayOrder *)order
+- (void)ylt_payOrder:(YLT_WeChatPayOrder *)order
             targetVC:(UIViewController *)targetVC
           complation:(void(^)(id response, YLT_PayError *error))complation {
-    _payOrder = order;
-    _complation = complation;
+    self.complation = complation;
     YLT_MAIN(^{
-        if ([WXApi registerApp:self.payOrder.credential[@"appid"]]) {
-            NSDictionary *result = self.payOrder.credential;
+        if (![self ylt_orderInvalid:order]) {
+            return;
+        }
+        self.payOrder = order;
+        if ([WXApi registerApp:self.payOrder.appId]) {
             PayReq *req = [[PayReq alloc] init];
-            req.partnerId = result[@"partnerid"];
-            req.prepayId = result[@"prepayid"];
-            req.nonceStr = result[@"noncestr"];
-            req.timeStamp = (UInt32)[result[@"timestamp"] integerValue];
-            req.package = result[@"package"];
-            req.sign = result[@"sign"];
+            req.partnerId = self.payOrder.partnerId;
+            req.prepayId = self.payOrder.prepayId;
+            req.nonceStr = self.payOrder.nonceStr;
+            req.timeStamp = self.payOrder.timeStamp;
+            req.package = self.payOrder.package;
+            req.sign = self.payOrder.sign;
             [WXApi sendReq:req];
         }
         else {

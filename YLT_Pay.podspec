@@ -22,7 +22,7 @@ AliPay、WeChatPay、UnionPay、ApplePay等支付方式集成
   s.libraries = 'z','sqlite3.0'
   s.dependency 'YLT_BaseLib'
   
-  s.header_mappings_dir = 'YLT_Pay/Classes/**'
+  s.header_mappings_dir = 'YLT_Pay/Classes'
   
   s.subspec 'AliPay' do |sp|
       sp.source_files = 'YLT_Pay/Classes/AliPay/*.{h,m}','YLT_Pay/Classes/AliPay/Util/*.{h,m}','YLT_Pay/Classes/AliPay/OpenSSL/*.h'

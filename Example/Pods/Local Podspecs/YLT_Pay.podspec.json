@@ -32,6 +32,81 @@
       "public_header_files": "YLT_Pay/Classes/*.h"
     },
     {
+      "name": "AliPay",
+      "source_files": [
+        "YLT_Pay/Classes/AliPay/*.{h,m}",
+        "YLT_Pay/Classes/AliPay/Util/*.{h,m}",
+        "YLT_Pay/Classes/AliPay/OpenSSL/OpenSSL/*.h"
+      ],
+      "public_header_files": [
+        "YLT_Pay/Classes/AliPay/*.h",
+        "YLT_Pay/Classes/AliPay/Util/*.h"
+      ],
+      "vendored_frameworks": "YLT_Pay/Classes/Alipay/*.framework",
+      "vendored_libraries": "YLT_Pay/Classes/Alipay/OpenSSL/lib/*.a",
+      "resources": "YLT_Pay/Classes/Alipay/*.bundle",
+      "libraries": [
+        "z",
+        "sqlite3.0",
+        "c++"
+      ],
+      "dependencies": {
+        "YLT_Pay/Pay": [
+
+        ]
+      },
+      "frameworks": [
+        "CoreMotion",
+        "CFNetwork",
+        "CoreGraphics",
+        "CoreText",
+        "QuartzCore",
+        "CoreTelephony",
+        "SystemConfiguration",
+        "Foundation",
+        "UIKit"
+      ]
+    },
+    {
+      "name": "WeChatPay",
+      "source_files": [
+        "YLT_Pay/Classes/WeChatPay/*.{h,m}",
+        "YLT_Pay/Classes/WeChatPay/lib/*.{h,m}"
+      ],
+      "public_header_files": "YLT_Pay/Classes/WeChatPay/*.h",
+      "vendored_libraries": "YLT_Pay/Classes/WeChatPay/lib/*.a",
+      "libraries": [
+        "z",
+        "sqlite3.0",
+        "c++"
+      ],
+      "dependencies": {
+        "YLT_Pay/Pay": [
+
+        ]
+      }
+    },
+    {
+      "name": "UnionPay",
+      "source_files": [
+        "YLT_Pay/Classes/UnionPay/*.{h,m,mm}",
+        "YLT_Pay/Classes/UnionPay/lib/*.{h,m,mm}"
+      ],
+      "public_header_files": "YLT_Pay/Classes/UnionPay/*.h",
+      "vendored_libraries": "YLT_Pay/Classes/UnionPay/lib/*.a",
+      "frameworks": "CoreMotion",
+      "libraries": [
+        "stdc++",
+        "z",
+        "sqlite3.0"
+      ],
+      "dependencies": {
+        "YLT_Pay/Pay": [
+
+        ]
+      }
+    },
+    {
       "name": "ApplePay",
       "source_files": "YLT_Pay/Classes/ApplePay/*.{h,m}",
       "public_header_files": "YLT_Pay/Classes/ApplePay/*.h",

@@ -4,11 +4,11 @@ use_frameworks!
 
 target 'YLT_Pay_Example' do
   pod 'YLT_Pay', :path => '../'
-  pod 'YLT_Pay/AliPay', :path => '../'
-  pod 'YLT_Pay/WeChatPay', :path => '../'
-  pod 'YLT_Pay/UnionPay', :path => '../'
-  pod 'YLT_Pay/ApplePay', :path => '../'
-  pod 'YLT_Pay/IapPay', :path => '../'
+#  pod 'YLT_Pay/AliPay', :path => '../'
+#  pod 'YLT_Pay/WeChatPay', :path => '../'
+#  pod 'YLT_Pay/UnionPay', :path => '../'
+#  pod 'YLT_Pay/ApplePay', :path => '../'
+#  pod 'YLT_Pay/IapPay', :path => '../'
   pod 'YLT_BaseLib'
   
   target 'YLT_Pay_Tests' do

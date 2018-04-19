@@ -20,15 +20,9 @@ PODS:
     - RMUniversalAlert
   - YLT_Pay (0.0.2):
     - YLT_BaseLib
-    - YLT_Pay/AliPay (= 0.0.2)
     - YLT_Pay/ApplePay (= 0.0.2)
     - YLT_Pay/IapPay (= 0.0.2)
     - YLT_Pay/Pay (= 0.0.2)
-    - YLT_Pay/UnionPay (= 0.0.2)
-    - YLT_Pay/WeChatPay (= 0.0.2)
-  - YLT_Pay/AliPay (0.0.2):
-    - YLT_BaseLib
-    - YLT_Pay/Pay
   - YLT_Pay/ApplePay (0.0.2):
     - YLT_BaseLib
     - YLT_Pay/Pay
@@ -37,21 +31,10 @@ PODS:
     - YLT_Pay/Pay
   - YLT_Pay/Pay (0.0.2):
     - YLT_BaseLib
-  - YLT_Pay/UnionPay (0.0.2):
-    - YLT_BaseLib
-    - YLT_Pay/Pay
-  - YLT_Pay/WeChatPay (0.0.2):
-    - YLT_BaseLib
-    - YLT_Pay/Pay
 
 DEPENDENCIES:
   - YLT_BaseLib
   - YLT_Pay (from `../`)
-  - YLT_Pay/AliPay (from `../`)
-  - YLT_Pay/ApplePay (from `../`)
-  - YLT_Pay/IapPay (from `../`)
-  - YLT_Pay/UnionPay (from `../`)
-  - YLT_Pay/WeChatPay (from `../`)
 
 EXTERNAL SOURCES:
   YLT_Pay:
@@ -66,8 +49,8 @@ SPEC CHECKSUMS:
   UIAlertController+Blocks: 80e28b92523fb58aba4d1bccec013d5a0b0bddb2
   UIAlertView+Blocks: a46c99c5144f6c5dbc7d62fd2a0678daceec89a3
   YLT_BaseLib: dab85763619e476e0dcb19ec2fdc4fe44dad4c40
-  YLT_Pay: 6a1aa102ef75b6dc1f84f818270cedeec994b5db
+  YLT_Pay: f8929dbdce20b2af0d64d9f9959140dfab5fc1e8
 
-PODFILE CHECKSUM: 176755c2d4286fff79c1f197e2ebb8b75470e83c
+PODFILE CHECKSUM: b4b69f8a1d24ccf60ce56febed49f214dbc2d0dc
 
 COCOAPODS: 1.4.0

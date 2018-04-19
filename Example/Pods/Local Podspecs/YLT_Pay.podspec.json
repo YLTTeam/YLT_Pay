@@ -1,6 +1,6 @@
 {
   "name": "YLT_Pay",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "支付方式集成",
   "description": "AliPay、WeChatPay、UnionPay、ApplePay等支付方式集成",
   "homepage": "https://github.com/YLTTeam/YLT_Pay.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/YLTTeam/YLT_Pay.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "platforms": {
     "ios": "8.0"
@@ -29,27 +29,21 @@
 
     ]
   },
-  "header_mappings_dir": "YLT_Pay/Classes/**",
   "subspecs": [
     {
       "name": "AliPay",
       "source_files": [
         "YLT_Pay/Classes/AliPay/*.{h,m}",
         "YLT_Pay/Classes/AliPay/Util/*.{h,m}",
-        "YLT_Pay/Classes/AliPay/OpenSSL/*.h"
+        "YLT_Pay/Classes/AliPay/OpenSSL/OpenSSL/*.h"
       ],
       "public_header_files": [
         "YLT_Pay/Classes/AliPay/*.h",
-        "YLT_Pay/Classes/AliPay/Util/*.h",
-        "YLT_Pay/Classes/AliPay/OpenSSL/*.h"
+        "YLT_Pay/Classes/AliPay/Util/*.h"
       ],
       "vendored_frameworks": "YLT_Pay/Classes/Alipay/*.framework",
-      "vendored_libraries": "YLT_Pay/Classes/Alipay/lib/*.a",
-      "resources": "YLT_Pay/Classes/Alipay/*.bundle",
-      "header_mappings_dir": "YLT_Pay/Classes/AliPay/**",
-      "xcconfig": {
-        "HEADER_SEARCH_PATHS": "$(inherited) $(PODS_ROOT)/YLT_Pay/Classes/AliPay/"
-      }
+      "vendored_libraries": "YLT_Pay/Classes/Alipay/OpenSSL/lib/*.a",
+      "resources": "YLT_Pay/Classes/Alipay/*.bundle"
     },
     {
       "name": "WeChatPay",

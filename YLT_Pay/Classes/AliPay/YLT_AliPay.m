@@ -6,7 +6,6 @@
 //
 
 #import "YLT_AliPay.h"
-#import "YLT_PayOrder.h"
 #import <AlipaySDK/AlipaySDK.h>
 #import "YLT_AliPayOrder.h"
 

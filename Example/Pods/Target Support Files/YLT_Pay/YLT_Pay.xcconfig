@@ -1,8 +1,8 @@
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/YLT_Pay
 FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../YLT_Pay/Classes/AliPay" "${PODS_CONFIGURATION_BUILD_DIR}/FMDB" "${PODS_CONFIGURATION_BUILD_DIR}/FastCoding" "${PODS_CONFIGURATION_BUILD_DIR}/MJExtension" "${PODS_CONFIGURATION_BUILD_DIR}/RMUniversalAlert" "${PODS_CONFIGURATION_BUILD_DIR}/UIActionSheet+Blocks" "${PODS_CONFIGURATION_BUILD_DIR}/UIAlertController+Blocks" "${PODS_CONFIGURATION_BUILD_DIR}/UIAlertView+Blocks" "${PODS_CONFIGURATION_BUILD_DIR}/YLT_BaseLib"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Public" $(inherited) $(PODS_ROOT)/YLT_Pay/Classes/AliPay/
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../YLT_Pay/Classes/AliPay/lib" "${PODS_ROOT}/../../YLT_Pay/Classes/UnionPay" "${PODS_ROOT}/../../YLT_Pay/Classes/WeChatPay"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Public"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../YLT_Pay/Classes/AliPay/OpenSSL/lib" "${PODS_ROOT}/../../YLT_Pay/Classes/UnionPay" "${PODS_ROOT}/../../YLT_Pay/Classes/WeChatPay"
 OTHER_LDFLAGS = -l"PaymentControl" -l"WeChatSDK" -l"crypto" -l"sqlite3.0" -l"ssl" -l"stdc++" -l"z" -framework "AlipaySDK" -framework "CoreMotion"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

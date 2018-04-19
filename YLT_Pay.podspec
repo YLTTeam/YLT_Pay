@@ -22,18 +22,16 @@ AliPay、WeChatPay、UnionPay、ApplePay等支付方式集成
   s.libraries = 'z','sqlite3.0'
   s.dependency 'YLT_BaseLib'
   
-  s.header_mappings_dir = 'YLT_Pay/Classes'
-  
   s.subspec 'AliPay' do |sp|
-      sp.source_files = 'YLT_Pay/Classes/AliPay/*.{h,m}','YLT_Pay/Classes/AliPay/Util/*.{h,m}','YLT_Pay/Classes/AliPay/OpenSSL/*.h'
-      sp.public_header_files = 'YLT_Pay/Classes/AliPay/*.h','YLT_Pay/Classes/AliPay/Util/*.h','YLT_Pay/Classes/AliPay/OpenSSL/*.h'
+      sp.source_files = 'YLT_Pay/Classes/AliPay/*.{h,m}','YLT_Pay/Classes/AliPay/Util/*.{h,m}','YLT_Pay/Classes/AliPay/OpenSSL/OpenSSL/*.h'
+      sp.public_header_files = 'YLT_Pay/Classes/AliPay/*.h','YLT_Pay/Classes/AliPay/Util/*.h'
       sp.vendored_frameworks = 'YLT_Pay/Classes/Alipay/*.framework'
-      sp.vendored_libraries = 'YLT_Pay/Classes/Alipay/lib/*.a'
+      sp.vendored_libraries = 'YLT_Pay/Classes/Alipay/OpenSSL/lib/*.a'
+      #sp.header_mappings_dir = 'YLT_Pay/Classes/AliPay/OpenSSL'
       sp.resources = 'YLT_Pay/Classes/Alipay/*.bundle'
-      sp.header_mappings_dir = 'YLT_Pay/Classes/AliPay/**'
-      sp.xcconfig = {
-          'HEADER_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/YLT_Pay/Classes/AliPay/'
-      }
+      #      sp.xcconfig = {
+      #   'HEADER_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/YLT_Pay/Classes/AliPay/OpenSSL/'
+      #}
   end
   
   s.subspec 'WeChatPay' do |sp|

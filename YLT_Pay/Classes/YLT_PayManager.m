@@ -6,11 +6,11 @@
 //
 
 #import "YLT_PayManager.h"
-#import "YLT_AliPay.h"
-#import "YLT_ApplePay.h"
-#import "YLT_IapPay.h"
-#import "YLT_UnionPay.h"
-#import "YLT_WeChatPay.h"
+//#import "YLT_AliPay.h"
+//#import "YLT_ApplePay.h"
+//#import "YLT_IapPay.h"
+//#import "YLT_UnionPay.h"
+//#import "YLT_WeChatPay.h"
 
 
 #define PAY_WXPAY @"YLT_WeChatPayOrder"
@@ -44,11 +44,11 @@ YLT_ShareInstance(YLT_PayManager);
 
 - (void)ylt_init {
     self.channelInfo = @{
-                         PAY_UNIONPAY:[[YLT_UnionPay alloc] init],
-                         PAY_WXPAY:[[YLT_WeChatPay alloc] init],
-                         PAY_ALIPAY:[[YLT_AliPay alloc] init],
-                         PAY_APPLE:[[YLT_ApplePay alloc] init],
-                         PAY_IAP:[[YLT_IapPay alloc] init]
+                         PAY_UNIONPAY:[[NSClassFromString(PAY_UNIONPAY) alloc] init],
+                         PAY_WXPAY:[[NSClassFromString(PAY_WXPAY) alloc] init],
+                         PAY_ALIPAY:[[NSClassFromString(PAY_ALIPAY) alloc] init],
+                         PAY_APPLE:[[NSClassFromString(PAY_APPLE) alloc] init],
+                         PAY_IAP:[[NSClassFromString(PAY_IAP) alloc] init]
                          };
 }
 

@@ -33,11 +33,13 @@
     {
       "name": "AliPay",
       "source_files": [
+        "YLT_Pay/Classes/*.{h,m}",
         "YLT_Pay/Classes/AliPay/*.{h,m}",
         "YLT_Pay/Classes/AliPay/Util/*.{h,m}",
         "YLT_Pay/Classes/AliPay/OpenSSL/OpenSSL/*.h"
       ],
       "public_header_files": [
+        "YLT_Pay/Classes/*.h",
         "YLT_Pay/Classes/AliPay/*.h",
         "YLT_Pay/Classes/AliPay/Util/*.h"
       ],
@@ -47,27 +49,53 @@
     },
     {
       "name": "WeChatPay",
-      "source_files": "YLT_Pay/Classes/WeChatPay/*.{h,m}",
-      "public_header_files": "YLT_Pay/Classes/WeChatPay/*.h",
-      "vendored_libraries": "YLT_Pay/Classes/WeChatPay/*.a"
+      "source_files": [
+        "YLT_Pay/Classes/*.{h,m}",
+        "YLT_Pay/Classes/WeChatPay/*.{h,m}",
+        "YLT_Pay/Classes/WeChatPay/lib/*.{h,m}"
+      ],
+      "public_header_files": [
+        "YLT_Pay/Classes/*.h",
+        "YLT_Pay/Classes/WeChatPay/*.h"
+      ],
+      "vendored_libraries": "YLT_Pay/Classes/WeChatPay/lib/*.a"
     },
     {
       "name": "UnionPay",
-      "source_files": "YLT_Pay/Classes/UnionPay/*.{h,m,mm}",
-      "public_header_files": "YLT_Pay/Classes/UnionPay/*.h",
-      "vendored_libraries": "YLT_Pay/Classes/UnionPay/*.a",
+      "source_files": [
+        "YLT_Pay/Classes/*.{h,m}",
+        "YLT_Pay/Classes/UnionPay/*.{h,m,mm}",
+        "YLT_Pay/Classes/UnionPay/lib/*.{h,m,mm}"
+      ],
+      "public_header_files": [
+        "YLT_Pay/Classes/*.h",
+        "YLT_Pay/Classes/UnionPay/*.h"
+      ],
+      "vendored_libraries": "YLT_Pay/Classes/UnionPay/lib/*.a",
       "frameworks": "CoreMotion",
       "libraries": "stdc++"
     },
     {
       "name": "ApplePay",
-      "source_files": "YLT_Pay/Classes/ApplePay/*.{h,m}",
-      "public_header_files": "YLT_Pay/Classes/ApplePay/*.h"
+      "source_files": [
+        "YLT_Pay/Classes/*.{h,m}",
+        "YLT_Pay/Classes/ApplePay/*.{h,m}"
+      ],
+      "public_header_files": [
+        "YLT_Pay/Classes/*.h",
+        "YLT_Pay/Classes/ApplePay/*.h"
+      ]
     },
     {
       "name": "IapPay",
-      "source_files": "YLT_Pay/Classes/IapPay/*.{h,m}",
-      "public_header_files": "YLT_Pay/Classes/IapPay/*.h"
+      "source_files": [
+        "YLT_Pay/Classes/*.{h,m}",
+        "YLT_Pay/Classes/IapPay/*.{h,m}"
+      ],
+      "public_header_files": [
+        "YLT_Pay/Classes/*.h",
+        "YLT_Pay/Classes/IapPay/*.h"
+      ]
     }
   ]
 }

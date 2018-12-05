@@ -27,10 +27,9 @@ AliPay、WeChatPay、UnionPay、ApplePay等支付方式集成
   end
 
   s.subspec 'AliPay' do |sp|
-      sp.source_files = 'YLT_Pay/Classes/AliPay/*.{h,m}','YLT_Pay/Classes/AliPay/Util/*.{h,m}','YLT_Pay/Classes/AliPay/OpenSSL/OpenSSL/*.h'
-      sp.public_header_files = 'YLT_Pay/Classes/AliPay/*.h','YLT_Pay/Classes/AliPay/Util/*.h'
+      sp.source_files = 'YLT_Pay/Classes/AliPay/*.{h,m}'
+      sp.public_header_files = 'YLT_Pay/Classes/AliPay/*.h'
       sp.vendored_frameworks = 'YLT_Pay/Classes/Alipay/*.framework'
-      sp.vendored_libraries = 'YLT_Pay/Classes/Alipay/OpenSSL/lib/*.a'
       sp.resources = 'YLT_Pay/Classes/Alipay/*.bundle'
       sp.libraries = 'z','sqlite3.0','c++'
       sp.dependency 'YLT_Pay/Pay'
@@ -72,9 +71,9 @@ AliPay、WeChatPay、UnionPay、ApplePay等支付方式集成
   end
   
   #sp.header_mappings_dir = 'YLT_Pay/Classes/AliPay/OpenSSL'
-  #      sp.xcconfig = {
-  #   'HEADER_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/YLT_Pay/Classes/AliPay/OpenSSL/'
-  #}
+#        sp.xcconfig = {
+#     'HEADER_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/YLT_Pay/Classes/AliPay/OpenSSL/'
+#  }
   #sp.xcconfig = {
   #   'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
   #    'CLANG_CXX_LIBRARY' => 'libc++'

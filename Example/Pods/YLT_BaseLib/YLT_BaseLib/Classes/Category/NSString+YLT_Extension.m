@@ -25,6 +25,7 @@
 @dynamic ylt_isEmoji;
 @dynamic ylt_isURL;
 @dynamic ylt_isLocalPath;
+@dynamic ylt_isAllChinese;
 
 #pragma mark - Public method 类方法
 /**
@@ -134,6 +135,20 @@
     NSInteger numMatch = [regex numberOfMatchesInString:sender options:NSMatchingReportProgress range:NSMakeRange(0, sender.length)];
     return numMatch > 0 ? YES : NO;
 }
+/**
+ 字符串是否全部是中文
+ 
+ @param sender 目标字符串
+ @return  YES:全部是 NO:包含非中文字符串
+ */
++ (BOOL)ylt_isAllChineseString:(NSString *)sender {
+    NSString *pattern  = @"^[\u4e00-\u9fa5]+$";
+    NSPredicate *regextest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
+    if (([regextest evaluateWithObject:sender] == YES)) {
+        return YES;
+    }
+    return NO;
+}
 
 /**
  字符串是否为整形
@@ -169,39 +184,9 @@
     if (sender.length != 11) {
         return NO;
     }
-    /**
-     * 手机号码:
-     * 13[0-9], 14[5,7], 15[0, 1, 2, 3, 5, 6, 7, 8, 9], 17[6, 7, 8], 18[0-9], 170[0-9]
-     * 移动号段: 134,135,136,137,138,139,150,151,152,157,158,159,182,183,184,187,188,147,178,1705
-     * 联通号段: 130,131,132,155,156,185,186,145,176,1709
-     * 电信号段: 133,153,180,181,189,177,1700
-     */
-    NSString *MOBILE = @"^1(3[0-9]|4[57]|5[0-35-9]|8[0-9]|7[0678])\\d{8}$";
-    /**
-     * 中国移动：China Mobile
-     * 134,135,136,137,138,139,150,151,152,157,158,159,182,183,184,187,188,147,178,1705
-     */
-    NSString *CM = @"(^1(3[4-9]|4[7]|5[0-27-9]|7[8]|8[2-478])\\d{8}$)|(^1705\\d{7}$)";
-    /**
-     * 中国联通：China Unicom
-     * 130,131,132,155,156,185,186,145,176,1709
-     */
-    NSString *CU = @"(^1(3[0-2]|4[5]|5[56]|7[6]|8[56])\\d{8}$)|(^1709\\d{7}$)";
-    /**
-     * 中国电信：China Telecom
-     * 133,153,180,181,189,177,1700
-     */
-    NSString *CT = @"(^1(33|53|77|8[019])\\d{8}$)|(^1700\\d{7}$)";
-    
+    NSString *MOBILE = @"^1([3456789])\\d{9}$";
     NSPredicate *regextestmobile = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", MOBILE];
-    NSPredicate *regextestcm = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", CM];
-    NSPredicate *regextestcu = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", CU];
-    NSPredicate *regextestct = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", CT];
-    
-    if (([regextestmobile evaluateWithObject:sender] == YES)
-        || ([regextestcm evaluateWithObject:sender] == YES)
-        || ([regextestct evaluateWithObject:sender] == YES)
-        || ([regextestcu evaluateWithObject:sender] == YES)) {
+    if (([regextestmobile evaluateWithObject:sender] == YES)) {
         return YES;
     }
     return NO;
@@ -216,7 +201,7 @@
 + (BOOL)ylt_isEmailString:(NSString *)sender {
     NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
-    return [emailTest evaluateWithObject:self];
+    return [emailTest evaluateWithObject:sender];
 }
 
 /**
@@ -357,7 +342,7 @@
 + (BOOL)ylt_isURL:(NSString *)sender {
     NSString *pattern = @"^(http||https)://([\\w-]+\.)+[\\w-]+(/[\\w-./?%&=]*)?$";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
-    if ([pred evaluateWithObject:self]) {
+    if ([pred evaluateWithObject:sender]) {
         //        BOOL res = [[NSURL URLWithString:self] checkResourceIsReachableAndReturnError:nil];
         return YES;
     }
@@ -373,7 +358,7 @@
 + (BOOL)ylt_isLocalPath:(NSString *)sender {
     NSString *pattern = @"/var/mobile/Applications/";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF BEGINSWITH %@", pattern];
-    return [pred evaluateWithObject:self];
+    return [pred evaluateWithObject:sender];
 }
 
 /**
@@ -628,6 +613,13 @@
  */
 - (BOOL)ylt_isChinese {
     return [NSString ylt_isChineseString:self];
+}
+
+/**
+ 字符串是否全部是中文
+ */
+- (BOOL)ylt_isAllChinese {
+    return [NSString ylt_isAllChineseString:self];
 }
 
 /**

@@ -9,10 +9,28 @@
 #import <sys/types.h>
 #import <sys/sysctl.h>
 #import <objc/message.h>
+#import "YLT_BaseMacro.h"
 #import <MJExtension/MJExtension.h>
 #import <FastCoding/FastCoder.h>
 
 @implementation NSObject (YLT_Extension)
+
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [UIView ylt_swizzleInstanceMethod:NSSelectorFromString(@"dealloc") withMethod:@selector(ylt_dealloc)];
+        [UIViewController ylt_swizzleInstanceMethod:NSSelectorFromString(@"dealloc") withMethod:@selector(ylt_dealloc)];
+    });
+}
+
+- (void)ylt_dealloc {
+    if ([self isKindOfClass:UIView.class] ||
+        [self isKindOfClass:UIViewController.class]) {
+        YLT_RemoveNotificationObserver();
+    }
+    
+    [self ylt_dealloc];
+}
 
 /**
  获取当前的控制器
@@ -54,8 +72,11 @@
             controller = presented;
         }
     } while (isPresenting);
-    if ([controller isKindOfClass:[UITabBarController class]]) {
+    while ([controller isKindOfClass:[UITabBarController class]]) {
         controller = ((UITabBarController *) controller).selectedViewController;
+        if ([controller isKindOfClass:[UINavigationController class]]) {
+            controller = [((UINavigationController *) controller).viewControllers lastObject];
+        }
     }
     if ([controller isKindOfClass:[UINavigationController class]]) {
         controller = [((UINavigationController *) controller).viewControllers lastObject];
@@ -142,6 +163,9 @@
  */
 + (id)ylt_valueByKey:(NSString *)key {
     NSParameterAssert(key);
+    if (![[[NSUserDefaults standardUserDefaults] dictionaryRepresentation].allKeys containsObject:key]) {
+        return nil;
+    }
     NSData *data = [[NSUserDefaults standardUserDefaults] valueForKey:key];
     return [FastCoder objectWithData:data];
 }
@@ -157,7 +181,10 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-#pragma mark -
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key {
+    YLT_LogError(@"设置的值VALUE:%@ 没有对应的KEY:%@", value, key);
+}
 
+#pragma mark -
 
 @end

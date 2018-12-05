@@ -8,7 +8,7 @@
 
 #import "YLT_Tools.h"
 #import <MJExtension/MJExtension.h>
-#import <RMUniversalAlert/RMUniversalAlert.h>
+#import "NSString+YLT_Extension.h"
 
 @implementation YLT_Tools
 
@@ -45,21 +45,6 @@
 }
 
 /**
- 显示跳转设置提示
- 
- @param title 标题
- */
-+ (void)ylt_showSettingTitle:(NSString *)title {
-    [RMUniversalAlert showAlertInViewController:self.ylt_currentVC withTitle:@"提示" message:title cancelButtonTitle:@"好的" destructiveButtonTitle:nil otherButtonTitles:(floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_7_1)?@[@"设置"]:nil tapBlock:^(RMUniversalAlert * _Nonnull alert, NSInteger buttonIndex) {
-        if (buttonIndex != 0) {
-            UIApplication *app = [UIApplication sharedApplication];
-            [app openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
-        }
-    }];
-}
-
-
-/**
  生成6位随机码 （数字和英文）
  
  @return 随机码
@@ -88,6 +73,26 @@
         return [[NSString alloc] initWithBytes:data length:length encoding:NSUTF8StringEncoding];
     }
     return @"";
+}
+
+/**
+ 从framework中加载类别
+ 
+ @param frameworkPath framework的地址
+ @param classname 类名
+ @return 类
+ */
++ (Class)ylt_loadClassFromFrameworkPath:(NSString *)frameworkPath classname:(NSString *)classname {
+    NSFileManager *manager = [NSFileManager defaultManager];
+    Class cls = NULL;
+    NSAssert([manager fileExistsAtPath:frameworkPath], @"找不到framework");
+    NSError *error;
+    NSBundle *frameworkBundle = [NSBundle bundleWithPath:frameworkPath];
+    NSAssert(frameworkBundle && [frameworkBundle loadAndReturnError:&error], [error description]);
+    // Load class
+    cls = NSClassFromString(classname);
+    NSAssert(cls != NULL, @"framework中找不到对应的类");
+    return cls;
 }
 
 @end

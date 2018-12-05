@@ -6,12 +6,6 @@
 //
 
 #import "YLT_PayManager.h"
-//#import "YLT_AliPay.h"
-//#import "YLT_ApplePay.h"
-//#import "YLT_IapPay.h"
-//#import "YLT_UnionPay.h"
-//#import "YLT_WeChatPay.h"
-
 
 #define PAY_WXPAY @"YLT_WeChatPayOrder"
 #define PAY_UNIONPAY @"YLT_UnionPayOrder"

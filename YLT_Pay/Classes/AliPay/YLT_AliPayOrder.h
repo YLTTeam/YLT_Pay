@@ -15,18 +15,6 @@
 @property (nonatomic, strong) NSString *sign;
 
 /**
- Alipay 需要客户端做第二次签名的实例调用
-
- @param credential 需要加密的信息
- @param key 公钥
- @param notifyURL 回调地址
- @return 实例
- */
-+ (YLT_AliPayOrder *)ylt_credential:(NSDictionary *)credential
-                                key:(NSString *)key
-                          notifyURL:(NSString *)notifyURL;
-
-/**
  Alipay 不需要客户端做二次签名的实例调用
 
  @param sign 签名信息

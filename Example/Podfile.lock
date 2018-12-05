@@ -1,46 +1,36 @@
 PODS:
   - FastCoding (3.3)
-  - FMDB (2.7.2):
-    - FMDB/standard (= 2.7.2)
-  - FMDB/standard (2.7.2)
-  - MJExtension (3.0.13)
-  - RMUniversalAlert (0.8.1):
-    - RMUniversalAlert/Core (= 0.8.1)
-  - RMUniversalAlert/Core (0.8.1):
-    - UIActionSheet+Blocks (>= 0.9)
-    - UIAlertController+Blocks (>= 0.9)
-    - UIAlertView+Blocks (>= 0.9)
-  - UIActionSheet+Blocks (0.9)
-  - UIAlertController+Blocks (0.9.2)
-  - UIAlertView+Blocks (0.9)
-  - YLT_BaseLib (0.1.3):
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - MJExtension (3.0.15.1)
+  - YLT_BaseLib (0.3.5):
     - FastCoding
     - FMDB
     - MJExtension
-    - RMUniversalAlert
-  - YLT_Pay (0.0.2):
+  - YLT_Pay (0.0.3):
     - YLT_BaseLib
-    - YLT_Pay/AliPay (= 0.0.2)
-    - YLT_Pay/ApplePay (= 0.0.2)
-    - YLT_Pay/IapPay (= 0.0.2)
-    - YLT_Pay/Pay (= 0.0.2)
-    - YLT_Pay/UnionPay (= 0.0.2)
-    - YLT_Pay/WeChatPay (= 0.0.2)
-  - YLT_Pay/AliPay (0.0.2):
-    - YLT_BaseLib
-    - YLT_Pay/Pay
-  - YLT_Pay/ApplePay (0.0.2):
+    - YLT_Pay/AliPay (= 0.0.3)
+    - YLT_Pay/ApplePay (= 0.0.3)
+    - YLT_Pay/IapPay (= 0.0.3)
+    - YLT_Pay/Pay (= 0.0.3)
+    - YLT_Pay/UnionPay (= 0.0.3)
+    - YLT_Pay/WeChatPay (= 0.0.3)
+  - YLT_Pay/AliPay (0.0.3):
     - YLT_BaseLib
     - YLT_Pay/Pay
-  - YLT_Pay/IapPay (0.0.2):
+  - YLT_Pay/ApplePay (0.0.3):
     - YLT_BaseLib
     - YLT_Pay/Pay
-  - YLT_Pay/Pay (0.0.2):
-    - YLT_BaseLib
-  - YLT_Pay/UnionPay (0.0.2):
+  - YLT_Pay/IapPay (0.0.3):
     - YLT_BaseLib
     - YLT_Pay/Pay
-  - YLT_Pay/WeChatPay (0.0.2):
+  - YLT_Pay/Pay (0.0.3):
+    - YLT_BaseLib
+  - YLT_Pay/UnionPay (0.0.3):
+    - YLT_BaseLib
+    - YLT_Pay/Pay
+  - YLT_Pay/WeChatPay (0.0.3):
     - YLT_BaseLib
     - YLT_Pay/Pay
 
@@ -48,21 +38,24 @@ DEPENDENCIES:
   - YLT_BaseLib
   - YLT_Pay (from `../`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FastCoding
+    - FMDB
+    - MJExtension
+    - YLT_BaseLib
+
 EXTERNAL SOURCES:
   YLT_Pay:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   FastCoding: 3b590f7143a229780fa744b35084d85d9461587e
-  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
-  MJExtension: 5932755f451458eefa24239358817f8d291240c7
-  RMUniversalAlert: ce7118101a19fa41b9adedf907b66a8cc3bd32c8
-  UIActionSheet+Blocks: e180b7dad0a721ab7f212ac9742af799008bb358
-  UIAlertController+Blocks: 80e28b92523fb58aba4d1bccec013d5a0b0bddb2
-  UIAlertView+Blocks: a46c99c5144f6c5dbc7d62fd2a0678daceec89a3
-  YLT_BaseLib: dab85763619e476e0dcb19ec2fdc4fe44dad4c40
-  YLT_Pay: 72d93058be06a1115cec3beb6af953a22e40fa28
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  YLT_BaseLib: d2f8ee59400147653f51733685dfb1acf49f20d8
+  YLT_Pay: 52c16ca9c90bb0cdf6283a4893b2c03860c3139c
 
 PODFILE CHECKSUM: b4b69f8a1d24ccf60ce56febed49f214dbc2d0dc
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
